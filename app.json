@@ -1,14 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/primary",
-    "pages/primary/primary"
+    "pages/primary/primary",
+    "pages/kindergarten/index",
+    "pages/natatorium/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#114875",
+    "navigationBarTitleText": "易尔实验园区",
+    "navigationBarTextStyle": "light"
   },
   "tabBar": {
     "list": [
@@ -17,8 +18,16 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/primary/primary",
+        "pagePath": "pages/kindergarten/index",
         "text": "小学"
+      },
+      {
+        "pagePath": "pages/kindergarten/index",
+        "text": "幼儿园"
+      },
+      {
+        "pagePath": "pages/natatorium/index",
+        "text": "游泳馆"
       }
     ]
   }

@@ -1,4 +1,4 @@
-// pages/primary.js
+// pages/kindergarten/index.js
 Page({
 
   /**
