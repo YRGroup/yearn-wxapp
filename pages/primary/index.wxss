@@ -1,1 +1,24 @@
 /* pages/primary/primary.wxss */
+page {
+  height: 100%;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.swiper-item {
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+}
+
+/* page1 */
+.page1 {}
+
+.page1 .content {
+  padding: 20rpx;
+  width: 80%;
+  margin:0 auto;
+  background: rgba(255, 255, 255, 0.5);
+}
