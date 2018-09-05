@@ -1,0 +1,4 @@
+<!--pages/primary/primary.wxml-->
+<view class="container">
+  <view ></view>
+</view>

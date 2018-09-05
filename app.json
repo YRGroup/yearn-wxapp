@@ -1,7 +1,7 @@
 {
   "pages": [
+    "pages/primary/index",
     "pages/index/index",
-    "pages/primary/primary",
     "pages/kindergarten/index",
     "pages/natatorium/index"
   ],
@@ -18,7 +18,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/kindergarten/index",
+        "pagePath": "pages/primary/index",
         "text": "小学"
       },
       {
