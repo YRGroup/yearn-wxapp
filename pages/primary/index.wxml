@@ -1,20 +1,22 @@
 <!--pages/primary/primary.wxml-->
 <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{false}}" vertical="{{true}}" indicator-color="#fff" indicator-active-color="#114875">
-  <swiper-item class="swiper-item page1">
-    <view class="content font-size-16">
+  <swiper-item
+    style="background-image: url('/images/primary/page1_phone.jpg');"
+  class="swiper-item page1 background-cover">
+    <view class="content">
       易尔实验学校是一所全日制双语小学。作为易尔实验园区承上启下的核心教育项目，汲取育人教育集团多年办学经验，融合河南省实验小学师资管理，引进上海世界外国语小学 课程体系，借鉴上海包玉刚实验学校学院制教学，从学生的习惯养成着手，培养具有人文底蕴、科学精神、国际视野、健康生活、实践创新、责任担当的21世纪全球性人才。
     </view>
   </swiper-item >
 
-  <swiper-item class="swiper-item">
+  <swiper-item  style="background-image: url('/images/primary/page2_phone.jpg');" class="swiper-item background-cover">
     <view >2</view>
   </swiper-item>
 
-  <swiper-item class="swiper-item"> 
+  <swiper-item  style="background-image: url('/images/primary/page4_phone.jpg');" class="swiper-item background-cover"> 
     <view >3</view>
   </swiper-item>
 
-  <swiper-item class="swiper-item">
+  <swiper-item   class="swiper-item background-cover">
     <swiper class="swiper"  indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}">
       <swiper-item class="swiper-item"> 
         <view >1</view>
@@ -26,5 +28,14 @@
         <view >13</view>
       </swiper-item>
     </swiper> 
+  </swiper-item>
+   <swiper-item  style="background-image: url('/images/primary/page5_phone.jpg');" class="swiper-item background-cover"> 
+    <view >3</view>
+  </swiper-item>
+   <swiper-item  style="background-image: url('/images/primary/page7_phone.jpg');" class="swiper-item background-cover"> 
+    <view >3</view>
+  </swiper-item>
+   <swiper-item  style="background-image: url('/images/primary/page8_phone.jpg');" class="swiper-item background-cover"> 
+    <view >3</view>
   </swiper-item>
 </swiper>
