@@ -1,8 +1,8 @@
 <!--components/banner/banner.wxml-->
 <view class="banner">
-    <view  class="btn">
+    <!-- <view  class="btn">
         <button class="btn1" size="mini">招生说明</button>
         <button class="btn2" size="mini">招生报名</button>
-    </view>
+    </view> -->
     <image class="img" src="{{bannerBg}}" mode="scaleToFill"></image>
 </view>
