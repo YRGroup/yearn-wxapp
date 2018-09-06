@@ -74,39 +74,67 @@
       </view>
       <image src="../../images/primary/primary_img_3.png" mode="aspectFit"> </image> 
       <view class="flex-row icons">
-        <view class="flex-item flex-column">
+         <view class="flex-item flex-column" style="background:#33babb">
+          <text>博士 13%</text>
+        </view>
+        <view class="flex-item flex-column" style="background:#f8b62b">
+          <text>硕士 66%</text>
+        </view>
+        <view class="flex-item flex-column" style="background:#14425c">
           <text>学士 21%</text>
         </view>
-        <view class="flex-item flex-column">
-          <text>学士 21%</text>
+        <view class="flex-item flex-column" style="background:#da4359">
+          <text>海归 40%</text>
         </view>
-        <view class="flex-item flex-column">
-          <text>学士 21%</text>
+        <view class="flex-item flex-column" style="background:#571b67">
+          <text>外教 40%</text>
         </view>
-        <view class="flex-item flex-column">
-          <text>学士 21%</text>
-        </view>
-        <view class="flex-item flex-column">
-          <text>学士 21%</text>
-        </view>
-        <view class="flex-item flex-column">
-          <text>学士 21%</text>
+        <view class="flex-item flex-column" style="background:#90c31f">
+          <text>双语 20%</text>
         </view>
       </view>
     </view>
   </swiper-item>
 
   <!-- page5 -->
-  <swiper-item   class="swiper-item background-cover">
-    <swiper class="swiper"  indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}">
-      <swiper-item class="swiper-item"> 
-        <view >1</view>
+  <swiper-item class="swiper-item background-cover page5">
+    <swiper class="swiper"  indicator-dots="{{true}}" autoplay="{{false}}" interval="{{5000}}" duration="{{500}}">
+      <swiper-item style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page6_book.jpg');" class="swiper-item background-cover"> 
+        <view class="content">
+          <view class="title">
+            <text class="iconfont">图书馆</text> 
+          </view>
+          <view class="desc">文学爱好者的精神家园。或坐、或卧、或躺、或站，不拘一格，纵观古今，跨越千年。在黑白的字里行间，感知文学的温度； 在扁平的书本中领略世界的维度。远，可神交先贤；近，可实践前沿。文学的世界没有边际，这里是学生的航标。
+          </view>
+        </view>
       </swiper-item>
-      <swiper-item class="swiper-item"> 
-        <view >2</view>
+      <swiper-item style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page6_theatre.jpg');" class="swiper-item background-cover"> 
+        <view class="content">
+          <view class="title">
+            <text class="iconfont">剧场</text> 
+          </view>
+          <view class="desc">舞台和灯光的交织，激发学生对戏剧的认知及生命的热爱，通过对中外戏剧的重现， 塑造学生中西融合，追本溯源，感同身受的伟大情怀。
+          
+          </view>
+        </view>
       </swiper-item>
-      <swiper-item class="swiper-item"> 
-        <view >13</view>
+      <swiper-item style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page6_music.jpg');" class="swiper-item background-cover"> 
+        <view class="content">
+          <view class="title">
+            <text class="iconfont">音乐厅</text> 
+          </view>
+          <view class="desc">了解创作与表演。进行乐理分析与演奏训练。欣赏巴洛克、古典、浪漫、现代、新世纪音乐。尝试独奏、协奏、 乃至交响乐的演奏。用音乐解读人文政史；用音乐抒发喜乐悲欢。与作曲家高山流水；与演奏家鼓乐和鸣。学生在这里，建立起与音乐一生的关联。
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page6_art.jpg');" class="swiper-item background-cover"> 
+        <view class="content">
+          <view class="title">
+            <text class="iconfont">美术室</text> 
+          </view>
+          <view class="desc">色彩与创意的碰撞，理论与实践的结合，探索艺术的基本元素和设计原则，在提高艺术表达能力的同时， 培养学生对个体、集体、文化以及多元环境的鉴赏能力。
+          </view>
+        </view>
       </swiper-item>
     </swiper> 
   </swiper-item>
@@ -132,26 +160,21 @@
       </view>
       <view class="flex-row icons">
         <view class="flex-item flex-column">
-          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
+          <image src="../../images/primary/icon_7.png" mode="aspectFit"> </image> 
+        </view>
+          <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_11.png" mode="aspectFit"> </image> 
+        </view>
+          <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_10.png" mode="aspectFit"> </image> 
         </view>
         <view class="flex-item flex-column">
-          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
+          <image src="../../images/primary/icon_9.png" mode="aspectFit"> </image> 
         </view>
         <view class="flex-item flex-column">
-          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
-        </view>
-        <view class="flex-item flex-column">
-          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
-        </view>
-        <view class="flex-item flex-column">
-          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
+          <image src="../../images/primary/icon_8.png" mode="aspectFit"> </image> 
         </view>
       </view>
-    </view>
-  </swiper-item>
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page8_phone.jpg" class="swiper-item background-cover flex-column page8"> 
-    <view>
-      
     </view>
   </swiper-item>
 </swiper>
