@@ -64,9 +64,10 @@ Page({
   
   },
   handleScroll:function(ev){
-    console.log(ev.detail.current)
-    this.setData({
-      currentPage:ev.detail.current
-    })
+    if(ev.detail.source=='touch'){
+      this.setData({
+        currentPage:ev.detail.current
+      })
+    }
   }
 })
