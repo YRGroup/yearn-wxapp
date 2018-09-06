@@ -29,3 +29,13 @@ page{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.flex-row{
+  display: flex;
+  justify-content: space-around;
+}
