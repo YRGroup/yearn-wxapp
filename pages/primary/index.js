@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    currentPage:0
   },
 
   /**
@@ -62,5 +62,11 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  handleScroll:function(ev){
+    console.log(ev.detail.current)
+    this.setData({
+      currentPage:ev.detail.current
+    })
   }
 })

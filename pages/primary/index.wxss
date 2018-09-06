@@ -46,9 +46,8 @@ page {
 }
 
 .page2 .icons .flex-item {
-  align-items: center;
-  width: 50%;
   text-align: center;
+  width: 50%;
   box-sizing: border-box;
   overflow: hidden;
   margin: 20rpx 0;
@@ -139,10 +138,21 @@ page {
 }
 .page7 .page-text{
   margin: 50rpx 0;
+  text-align: left;
 }
 .page7 .flex-row image{
   width: 80rpx;
   height: 80rpx;
+}
+.page7 .page-title .circle{
+  display: inline-block;
+  background: #13415a;
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin-right: 10px;
 }
 
 .page8{
