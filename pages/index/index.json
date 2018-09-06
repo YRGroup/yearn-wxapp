@@ -2,6 +2,7 @@
   "usingComponents": {
     "van-button": "/dist/button/index",
     "v-banner": "/components/banner/banner",
-    "v-introduce": "/components/introduce/introduce"
+    "v-introduce": "/components/introduce/introduce",
+    "v-design": "/components/design/design"
   }
 }

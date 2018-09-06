@@ -1,5 +1,9 @@
 <!--components/introduce/introduce.wxml-->
 <view class="introduce">
+    <view class="title">
+        <text >YEARN INTRODUCTION</text>
+        <text >易尔简介</text>
+    </view>
     <view class="container">
         <text decode>{{text}}</text>
     </view>

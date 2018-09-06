@@ -1,0 +1,12 @@
+<!--components/design/design.wxml-->
+<view class="design">
+    <view class="box">
+        <view class="title">
+            <text >YEARN DESIGN</text>
+            <text >园区设计</text>
+        </view>
+        <image class="round" src="{{round}}"></image>
+        <text class="info">{{text}}</text>
+    </view>
+    <image class="img" src="{{introduceBg}}" mode="scaleToFill"></image>
+</view>
