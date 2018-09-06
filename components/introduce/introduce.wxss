@@ -1,0 +1,19 @@
+.introduce{
+    height: 980rpx;
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+}
+.container{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgba(185, 185, 185, 0.3);
+    border-radius: 10rpx;
+    margin: 40rpx;
+    padding: 40rpx;
+    /* line-height: 42rpx; */
+}

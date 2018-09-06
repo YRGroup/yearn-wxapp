@@ -1,1 +1,2 @@
-<van-button type="primary">按钮</van-button>
+<v-banner></v-banner>
+<v-introduce></v-introduce>

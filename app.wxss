@@ -1,6 +1,7 @@
 /**app.wxss**/
 page{
   font-size: 32rpx;
+  line-height:48rpx;
 }
 .container {
   height: 100%;

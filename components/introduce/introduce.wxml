@@ -1,0 +1,7 @@
+<!--components/introduce/introduce.wxml-->
+<view class="introduce">
+    <view class="container">
+        <text decode>{{text}}</text>
+    </view>
+    <image class="img" src="{{introduceBg}}" mode="scaleToFill"></image>
+</view>
