@@ -1,5 +1,6 @@
 <!--pages/primary/primary.wxml-->
 <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{false}}" vertical="{{true}}" indicator-color="#fff" indicator-active-color="#114875">
+  <!-- page1 -->
   <swiper-item
     style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page1_phone.jpg');"
   class="swiper-item page1 background-cover">
@@ -7,15 +8,95 @@
       易尔实验学校是一所全日制双语小学。作为易尔实验园区承上启下的核心教育项目，汲取育人教育集团多年办学经验，融合河南省实验小学师资管理，引进上海世界外国语小学 课程体系，借鉴上海包玉刚实验学校学院制教学，从学生的习惯养成着手，培养具有人文底蕴、科学精神、国际视野、健康生活、实践创新、责任担当的21世纪全球性人才。
     </view>
   </swiper-item >
+  <!-- page2 -->
+  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page2_phone.jpg');" class="swiper-item page2 background-cover flex-column">
+    <view class="content">
+      <view class="page-title">
+        <text>核心素养</text>
+      </view>
+      <view class="flex-row icons">
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
+          <text>自我激励</text>
+          <text>Self-Motivation</text>
+        </view>
 
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page2_phone.jpg');" class="swiper-item background-cover">
-    <view >2</view>
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_2.png" mode="aspectFit"> </image> 
+          <text>批判性思维</text>
+          <text>Critical Thinking</text>
+        </view>
+
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_3.png" mode="aspectFit"> </image> 
+          <text>跨文化意识</text>
+          <text>Multi-Cultural Awareness</text>
+        </view>
+
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_4.png" mode="aspectFit"> </image> 
+          <text>创意和创新</text>
+          <text> Creativity and Innovation</text>
+        </view>
+
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_5.png" mode="aspectFit"> </image> 
+          <text>沟通能力</text>
+          <text>Communication</text>
+        </view>
+
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_6.png" mode="aspectFit"> </image> 
+          <text>团队合作</text>
+          <text>Collaboration</text>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <!-- page3 -->
+  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page4_phone.jpg');" class="swiper-item background-cover flex-column page3"> 
+    <view class="content">
+      <view class="page-title">
+        <text>PBL项目制学习</text>
+      </view>
+      <view class="page-text">
+        <text>项目制学习帮助学生的学业生涯、个人生活、职业生涯更充分发展，从而让学生更从容的面对主客观世界面临的挑战。</text>
+      </view>
+      <image src="../../images/primary/primary_img_2.png" mode="aspectFit"> </image> 
+    </view>
   </swiper-item>
 
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page4_phone.jpg');" class="swiper-item background-cover"> 
-    <view >3</view>
+  <!-- page4 -->
+  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page5_phone.jpg');" class="swiper-item background-cover flex-column page4"> 
+    <view class="content">
+      <view class="page-title">
+        <text>师资力量</text>
+      </view>
+      <image src="../../images/primary/primary_img_3.png" mode="aspectFit"> </image> 
+      <view class="flex-row icons">
+        <view class="flex-item flex-column">
+          <text>学士 21%</text>
+        </view>
+        <view class="flex-item flex-column">
+          <text>学士 21%</text>
+        </view>
+        <view class="flex-item flex-column">
+          <text>学士 21%</text>
+        </view>
+        <view class="flex-item flex-column">
+          <text>学士 21%</text>
+        </view>
+        <view class="flex-item flex-column">
+          <text>学士 21%</text>
+        </view>
+        <view class="flex-item flex-column">
+          <text>学士 21%</text>
+        </view>
+      </view>
+    </view>
   </swiper-item>
 
+  <!-- page5 -->
   <swiper-item   class="swiper-item background-cover">
     <swiper class="swiper"  indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}">
       <swiper-item class="swiper-item"> 
@@ -29,13 +110,48 @@
       </swiper-item>
     </swiper> 
   </swiper-item>
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page5_phone.jpg');" class="swiper-item background-cover"> 
-    <view >3</view>
+
+  <!-- page6 -->
+  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page7_phone.jpg');" class="swiper-item background-cover flex-column page6"> 
+    <view class="content">
+      <view class="page-text">
+        <text>项目制学习帮助学生的学业生涯、个人生活、职业生涯更充分发展，从而让学生更从容的面对主客观世界面临的挑战。</text>
+      </view>
+      <image src="../../images/primary/page7class-2.png" mode="aspectFit"> </image> 
+    </view>
   </swiper-item>
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page7_phone.jpg');" class="swiper-item background-cover"> 
-    <view >3</view>
+
+  <!-- page7 -->
+  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page8_phone.jpg" class="swiper-item background-cover flex-column page7"> 
+    <view class="content">
+      <view class="page-title">
+        <text>K12课程开发实践基地</text>
+      </view>
+      <view class="page-text">
+        <text>易尔K12课程开发实践基地是基于跨学科整合，项目制学习，混龄制互动，多语言环境，多课程互补的课程开发、实践基地。国内外资深行业引领者组成的课程开发和教学团队，引领学生在学业生涯初期，立足易尔，同步世界。</text>
+      </view>
+      <view class="flex-row icons">
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
+        </view>
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
+        </view>
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
+        </view>
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
+        </view>
+        <view class="flex-item flex-column">
+          <image src="../../images/primary/icon_1.png" mode="aspectFit"> </image> 
+        </view>
+      </view>
+    </view>
   </swiper-item>
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page8_phone.jpg" class="swiper-item background-cover"> 
-    <view >3</view>
+  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page8_phone.jpg" class="swiper-item background-cover flex-column page8"> 
+    <view>
+      
+    </view>
   </swiper-item>
 </swiper>
