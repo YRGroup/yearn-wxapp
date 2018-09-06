@@ -49,5 +49,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onShareAppMessage: function() {
+    return {
+      title: '育人教育集团易尔实验园区',
+      path: '/pages/index/index',
+      imageUrl: '/images/share.png'
+    }
   }
 })

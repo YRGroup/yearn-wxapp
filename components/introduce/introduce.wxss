@@ -17,8 +17,8 @@
     justify-content: center;
     width: 100%;
     text-align: center;
-    font-size: 48rpx;
-    padding: 50rpx 0;
+    font-size: 42rpx;
+    padding: 40rpx 0;
 }
 .container{
     position: absolute;

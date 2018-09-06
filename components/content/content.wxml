@@ -1,0 +1,29 @@
+<!--components/content/content.wxml-->
+<view class="content">
+    <view class="box">
+        <view class="item logoPic">
+            <image class="logo" mode="aspectFit" src="../../images/logo2.png"></image>
+            <image class="code" mode="aspectFit" src="../../images/codeImg.jpg"></image>
+        </view>
+        <view class="item" bindtap="openmap">
+            <image class="icon" src="../../images/index/address.png"></image>
+            <text >金水区黄河南路商鼎路东200米北万安街</text>    
+        </view>
+        <view class="item tool">
+            <!-- <view>
+                <image class="icon" src="../../images/index/view.png"></image>
+                <text >浏览</text>
+            </view> -->
+            <view bindtap="callphone">
+                <image class="icon" src="../../images/index/phone.png"></image>
+                <text >拨打电话</text>
+            </view>
+            <view>
+                <button open-type="share">
+                    <image class="icon" src="../../images/index/share.png"></image>
+                    <text >分享</text>
+                </button>
+            </view>
+        </view>
+    </view>
+</view>
