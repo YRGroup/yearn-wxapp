@@ -15,7 +15,8 @@ page {
 
 /* page1 */
 .page1 {
-  /* background-image: url('/images/primary/page1_phone.jpg'); */
+  /* background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page1_phone.jpg'); */
+  background-image: url('/images/primary/page1_phone.jpg');
 }
 
 .page1 .content {
