@@ -20,14 +20,6 @@
       {
         "pagePath": "pages/primary/index",
         "text": "小学"
-      },
-      {
-        "pagePath": "pages/kindergarten/index",
-        "text": "幼儿园"
-      },
-      {
-        "pagePath": "pages/natatorium/index",
-        "text": "游泳馆"
       }
     ]
   }

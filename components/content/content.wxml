@@ -19,7 +19,7 @@
                 <text >拨打电话</text>
             </view>
             <view>
-                <button open-type="share">
+                <button open-type="share" >
                     <image class="icon" src="../../images/index/share.png"></image>
                     <text >分享</text>
                 </button>

@@ -30,6 +30,7 @@
     height: 48rpx;
     margin-right:20rpx;
     color: #989898;
+    vertical-align: middle;
 }
 .logoPic{
     flex-direction: column;
@@ -58,15 +59,16 @@
 }
 .tool button{
     width: 100%;
-    height: 100%;
-    padding: 0;
     border: none;
     background: transparent;
-    position: static;
-    line-height: 1;
-    display: inline-flex;
+    line-height: 48rpx;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     font-size: 32rpx;
     color: #fff;
+}
+.tool button::after{
+  content: '';
+  border: none;
 }
