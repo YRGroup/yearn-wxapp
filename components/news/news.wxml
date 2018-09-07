@@ -1,0 +1,6 @@
+<!--components/introduce/introduce.wxml-->
+<view class="wrapper">
+  <view :wx:for="{{newsList}}">
+    
+  </view>
+</view>

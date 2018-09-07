@@ -1,4 +1,5 @@
 <v-banner></v-banner>
 <v-introduce></v-introduce>
 <v-design></v-design>
+<v-news></v-news>
 <v-content></v-content>
