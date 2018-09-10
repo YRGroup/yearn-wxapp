@@ -1,6 +1,11 @@
 <!--components/introduce/introduce.wxml-->
 <view class="wrapper">
-  <view :wx:for="{{newsList}}">
-    
+  <view class="title">
+      <text >YEARN DYNAMICS</text>
+      <text >易尔动态</text>
+  </view>
+  <view bindtap="handlenews" data-id="{{item.id}}"  class="news-card"  wx:for="{{newsList}}" wx:key="index" wx:for-item="item" wx:for-index="index">
+    <van-card title="{{item.excerpt}}" desc="{{item.date}}"  thumb="{{ item.thumbnail}}">
+    </van-card>
   </view>
 </view>

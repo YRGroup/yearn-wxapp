@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/primary/index",
     "pages/kindergarten/index",
-    "pages/natatorium/index"
+    "pages/natatorium/index",
+    "pages/news/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

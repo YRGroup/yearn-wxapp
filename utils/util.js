@@ -14,6 +14,11 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
-module.exports = {
-  formatTime: formatTime
+const formatNewsTitle=(str)=>{
+  let reg=/^<.+>(.+)<.+>$/;
+  return str.match(reg)
+}
+export {
+  formatTime,
+  formatNewsTitle
 }
