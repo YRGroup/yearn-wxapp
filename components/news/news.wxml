@@ -4,7 +4,7 @@
       <text >YEARN DYNAMICS</text>
       <text >易尔动态</text>
   </view>
-  <view  class="news-card"  wx:for="{{newsList}}" wx:key="index" wx:for-item="item" wx:for-index="index">
+  <view bindtap="handlenews" data-id="{{item.id}}"  class="news-card"  wx:for="{{newsList}}" wx:key="index" wx:for-item="item" wx:for-index="index">
     <van-card title="{{item.excerpt}}" desc="{{item.date}}"  thumb="{{ item.thumbnail}}">
     </van-card>
   </view>

@@ -30,7 +30,7 @@ Component({
     detached: function () {},
   },
   attached: function () {
-   
+
   },
   /**
    * 组件的方法列表
@@ -41,9 +41,7 @@ Component({
         count: 4,
         id: 2
       }
-      console.log(1)
-      api.getNews(para, (res) => {  
-        console.log(2)  
+      api.getNews(para, (res) => { 
         let data=res.posts.map(el=>{
           el.excerpt=this.formatNewsTitle(el.excerpt)
           return el;
@@ -57,6 +55,12 @@ Component({
     formatNewsTitle:(str)=>{
       let reg=/^<.+>(.+)<.+>/;
       return str.match(reg)[1]||'';
+    },
+    handlenews(ev){
+      let id= ev.currentTarget.dataset.id;
+      wx.navigateTo({
+        url:`../news/index?id=${id}`
+      })
     }
   }
 })
