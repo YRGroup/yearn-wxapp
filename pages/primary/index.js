@@ -69,5 +69,8 @@ Page({
         currentPage:ev.detail.current
       })
     }
+  },
+  handle(str){
+    return str+'11';
   }
 })
