@@ -17,7 +17,7 @@ Page({
       wx.navigateBack()
       return;
     }
-    let src = `http://a1.yearn.com/allnews/news/${options.id}.html`
+    let src = `http://a1.yearn.com/allnews/news/${options.id}.html?weapp=1`
     this.setData({
       src: src
     })
