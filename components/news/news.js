@@ -12,7 +12,22 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    count:{
+      type:Number,
+      value: 4
+    },
+    showTitle:{
+      type:Boolean,
+      value:false
+    },
+    showMore:{
+      type:Boolean,
+      value:false
+    },
+    showPagenation:{
+      type:Boolean,
+      value:true
+    }
   },
 
   /**
@@ -38,7 +53,7 @@ Component({
   methods: {
     getNews: function () {
       let para = {
-        count: 4,
+        count: this.data.count,
         id: 2
       }
       api.getNews(para, (res) => { 
@@ -46,7 +61,6 @@ Component({
           el.excerpt=this.formatNewsTitle(el.excerpt)
           return el;
         })
-        console.log(data)
         this.setData({
           newsList: res.posts
         })
@@ -60,6 +74,11 @@ Component({
       let id= ev.currentTarget.dataset.id;
       wx.navigateTo({
         url:`../news/index?id=${id}`
+      })
+    },
+    toNewsPage(){
+      wx.navigateTo({
+        url:`../newsList/index`
       })
     }
   }

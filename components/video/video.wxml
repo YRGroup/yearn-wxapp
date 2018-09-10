@@ -1,0 +1,4 @@
+<!--components/introduce/introduce.wxml-->
+<view class="wrapper">
+  <video src="{{videoSrc}}"></video>
+</view>

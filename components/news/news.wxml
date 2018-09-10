@@ -1,11 +1,18 @@
 <!--components/introduce/introduce.wxml-->
 <view class="wrapper">
-  <view class="title">
+  <view wx:if="{{showTitle}}" class="title">
       <text >YEARN DYNAMICS</text>
       <text >易尔动态</text>
   </view>
+  <view class="loading-wrapper">
+    <van-loading wx:if="{{!newsList.length}}"  color="#ddd" />
+  </view>
   <view bindtap="handlenews" data-id="{{item.id}}"  class="news-card"  wx:for="{{newsList}}" wx:key="index" wx:for-item="item" wx:for-index="index">
-    <van-card title="{{item.excerpt}}" desc="{{item.date}}"  thumb="{{ item.thumbnail}}">
+    <van-card title-class="news-title" title="{{item.excerpt}}" desc="{{item.date}}"  thumb="{{ item.thumbnail}}">
     </van-card>
   </view>
+  <view wx:if="{{showMore}}" class="btn-wrapper">
+    <van-button bind:click="toNewsPage"  custom-class="btn" type="primary" plain size="large">more ></van-button>
+  </view>
+  <view wx:if="{{showPagenation}}"></view>
 </view>

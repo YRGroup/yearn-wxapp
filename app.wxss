@@ -14,15 +14,15 @@ page{
 }
 
 .font-size-16 {
-  font-size: 34rpx;
+  font-size: 30rpx;
 }
 
 .font-size-18 {
-  font-size: 38rpx;
+  font-size: 34rpx;
 }
 
 .font-size-20 {
-  font-size: 42rpx;
+  font-size: 38rpx;
 }
 
 .background-cover {

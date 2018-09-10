@@ -5,6 +5,7 @@
     "v-introduce": "/components/introduce/introduce",
     "v-design": "/components/design/design",
     "v-content": "/components/content/content",
+    "v-video": "/components/video/video",
     "v-news": "/components/news/news"
   }
 }
