@@ -11,7 +11,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    img: 'http://a1.yearn.com/wp-content/themes/yearn/assets/images/yearn_codeImg.jpg'
   },
 
   /**
@@ -27,7 +27,6 @@ Component({
       wx.getLocation({
         type: 'gcj02', //返回可以用于wx.openLocation的经纬度
         success: function(res) {
-          console.log(res)
           var latitude = res.latitude
           var longitude = res.longitude
           wx.openLocation({
@@ -36,6 +35,15 @@ Component({
             scale: 28
           })
         }
+      })
+    },
+    previewImage: function(e) {
+      let src = e.target.dataset.src
+      let arr = []
+      arr.push(src)
+      wx.previewImage({
+        current: src,
+        urls: arr
       })
     }
   }
