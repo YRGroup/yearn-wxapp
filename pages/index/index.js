@@ -64,5 +64,10 @@ Page({
       path: '/pages/index/index',
       imageUrl: '/images/share.png'
     }
-  }
+  },
+  toNewsPage() {
+    wx.navigateTo({
+      url: `../newsList/index`
+    })
+  },
 })

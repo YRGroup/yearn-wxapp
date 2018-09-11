@@ -1,4 +1,5 @@
 // pages/primary/primary.js
+const DEFAULT_TOP = 300;
 Page({
 
   /**
@@ -6,14 +7,15 @@ Page({
    */
   data: {
     currentPage: 0,
-    src: ''
+    src: '',
+    posTop: DEFAULT_TOP
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
@@ -65,13 +67,17 @@ Page({
 
   },
   handleScroll: function (ev) {
-    if (ev.detail.source == 'touch') {
-      this.setData({
-        currentPage: ev.detail.current
-      })
+    console.log(ev.detail.detail)
+
+    let top = DEFAULT_TOP-ev.detail.detail.scrollTop;
+    if (top < 0) {
+      top = 0;
     }
-  },
-  handle(str) {
-    return str + '11';
+    if (top > DEFAULT_TOP) {
+      top = DEFAULT_TOP;
+    }
+    this.setData({
+      posTop: top
+    })
   }
 })
