@@ -2,15 +2,17 @@
 <v-introduce></v-introduce>
 <v-design></v-design>
 <v-video></v-video>
-<v-news count="{{4}}" listPage="{{false}}">
-  <view class="title" slot="before">
-    <text>YEARN DYNAMICS</text>
-    <text>易尔动态</text>
-  </view>
-  <view class="btn-wrapper" slot="after">
-    <van-button bind:click="toNewsPage" custom-class="btn" type="primary" plain size="large">
-      more >
-    </van-button>
-  </view>
-</v-news>
+<view class="news">
+  <v-news count="{{4}}" listPage="{{false}}">
+    <view class="title" slot="before">
+      <text>YEARN DYNAMICS</text>
+      <text>易尔动态</text>
+    </view>
+    <view class="btn-wrapper" slot="after">
+      <van-button bind:click="toNewsPage" custom-class="btn" type="primary" plain size="large">
+        more >
+      </van-button>
+    </view>
+  </v-news>
+</view>
 <v-content></v-content>

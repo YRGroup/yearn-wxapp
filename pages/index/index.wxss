@@ -38,3 +38,6 @@
   color: #114875 !important;
   border-color: #114875;
 }
+.news{
+  margin-bottom: 40rpx;
+}
