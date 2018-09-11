@@ -49,6 +49,13 @@
 .loading-wrapper{
   text-align: center;
 }
-.btn{
-
+.scrollViewBox{
+  height: 100%;
+}
+.scrollViewBox .scrollView{
+  height: 100%;
+}
+.bannerImg{
+  height: 300rpx;
+  width: 100%;
 }

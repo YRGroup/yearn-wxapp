@@ -2,5 +2,5 @@
 <v-introduce></v-introduce>
 <v-design></v-design>
 <v-video></v-video>
-<v-news showTitle="{{true}}" showMore="{{true}}"></v-news>
+<v-news listPage="{{false}}"></v-news>
 <v-content></v-content>
