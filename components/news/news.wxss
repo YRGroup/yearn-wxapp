@@ -35,3 +35,27 @@
 .news-card{
   margin: 20rpx 0;
 }
+.news-title{
+  font-size: 30rpx;
+}
+.btn-wrapper{
+  width: 90%;
+  margin: 20rpx auto;
+}
+.btn-wrapper button{
+  color: #114875 !important;
+  border-color: #114875;
+}
+.loading-wrapper{
+  text-align: center;
+}
+.scrollViewBox{
+  height: 100%;
+}
+.scrollViewBox .scrollView{
+  height: 100%;
+}
+.bannerImg{
+  height: 300rpx;
+  width: 100%;
+}

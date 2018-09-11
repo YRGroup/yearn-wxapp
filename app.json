@@ -4,7 +4,8 @@
     "pages/primary/index",
     "pages/kindergarten/index",
     "pages/natatorium/index",
-    "pages/news/index"
+    "pages/news/index",
+    "pages/newsList/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

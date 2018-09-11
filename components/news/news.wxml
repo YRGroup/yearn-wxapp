@@ -1,11 +1,27 @@
-<!--components/introduce/introduce.wxml-->
-<view class="wrapper">
-  <view class="title">
-      <text >YEARN DYNAMICS</text>
-      <text >易尔动态</text>
+<!-- components/introduce/introduce.wxml -->
+<view class="wrapper" class="scrollViewBox">
+  <view wx:if="{{!listPage}}" class="title">
+    <text>YEARN DYNAMICS</text>
+    <text>易尔动态</text>
   </view>
-  <view bindtap="handlenews" data-id="{{item.id}}"  class="news-card"  wx:for="{{newsList}}" wx:key="index" wx:for-item="item" wx:for-index="index">
-    <van-card title="{{item.excerpt}}" desc="{{item.date}}"  thumb="{{ item.thumbnail}}">
-    </van-card>
+  <image wx:if="{{listPage}}" class="bannerImg" src="../../images/newsBg.jpg" mode="aspectFill"></image>
+  <view class="loading-wrapper" wx:if="{{!newsList.length}}">
+    <van-loading color="#ddd" />
+  </view>
+  <scroll-view class="scrollView" scroll-y bindscrolltolower="handleScrollBottom">
+    <view bindtap="handlenews" data-id="{{item.id}}" class="news-card" wx:for="{{newsList}}" wx:key="index" wx:for-item="item" wx:for-index="index">
+      <van-card title-class="news-title" title="{{item.excerpt}}" desc="{{item.date}}" thumb="{{ item.thumbnail}}"></van-card>
+    </view>
+    <view wx:if="{{listPage&&loadingMore}}" class="loading-wrapper">
+      <van-loading color="#ddd" />
+    </view>
+    <view  wx:if="{{noMore}}">
+      <text>没有更多了</text>
+    </view>
+  </scroll-view>
+  <view wx:if="{{!listPage}}" class="btn-wrapper">
+    <van-button bind:click="toNewsPage" custom-class="btn" type="primary" plain size="large">
+      more >
+    </van-button>
   </view>
 </view>
