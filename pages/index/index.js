@@ -53,11 +53,8 @@ Page({
   },
   //分享
   onShareAppMessage: function (ops) {
-    console.log(1111)
-    console.log(ops)
     if (ops.from === 'button') {
       // 来自页面内转发按钮
-      console.log(ops.target)
     }
     return {
       title: '育人教育集团易尔实验园区',
