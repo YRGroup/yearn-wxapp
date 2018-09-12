@@ -38,6 +38,7 @@ Component({
   methods: {
     getXc(id) {
       api.getXcById(id, (res) => {
+        console.log(res)
         this.setData({
           imgUrls: res.post.attachments
         })

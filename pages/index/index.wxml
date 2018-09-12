@@ -15,7 +15,7 @@
     </view>
   </v-news>
 </view>
-<view>
+<view style="margin-bottom:30rpx;">
   <view class="title" >
     <text>YEARN DYNAMICS</text>
     <text>少儿活动</text>
