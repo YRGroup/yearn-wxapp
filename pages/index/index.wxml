@@ -15,4 +15,11 @@
     </view>
   </v-news>
 </view>
+<view>
+  <view class="title" >
+    <text>YEARN DYNAMICS</text>
+    <text>少儿活动</text>
+  </view>
+  <v-actives foid="{{1002}}"></v-actives>
+</view>
 <v-content></v-content>

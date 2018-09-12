@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-panel": "../../dist/panel/index",
+    "van-card": "../../dist/card/index",
+    "van-button": "../../dist/button/index",
+    "van-loading": "../../dist/loading/index"
+  }
+}

@@ -70,4 +70,5 @@ Page({
       url: `../newsList/index`
     })
   },
+
 })

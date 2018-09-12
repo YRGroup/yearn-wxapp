@@ -1,13 +1,20 @@
 // components/introduce/introduce.js
+import {
+  formatNewsTitle
+} from "../../utils/index"
+import {
+  Api
+} from "../../server/api";
+let api = new Api();
 
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    count: {
+    foid: {
       type: Number,
-      value: 4
+      value: 0
     }
   },
 
@@ -15,21 +22,27 @@ Component({
    * 组件的初始数据
    */
   data: {
-    videoSrc: "http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/yearn/becomingwhoyouare.mp4"
+    imgUrls: []
   },
   lifetimes: {
     // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
-    attached: function () {},
+    attached: function () {
+      this.getXc(this.data.foid)
+    },
     moved: function () {},
     detached: function () {},
-  },
-  attached: function () {
-
   },
   /**
    * 组件的方法列表
    */
   methods: {
-
+    getXc(id) {
+      api.getXcById(id, (res) => {
+        console.log(res)
+        this.setData({
+          imgUrls: res.post.attachments
+        })
+      })
+    }
   }
 })

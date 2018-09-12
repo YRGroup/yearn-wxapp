@@ -1,7 +1,7 @@
 // components/introduce/introduce.js
 import {
   formatNewsTitle
-} from "../../utils/util"
+} from "../../utils/index"
 import {
   Api
 } from "../../server/api";

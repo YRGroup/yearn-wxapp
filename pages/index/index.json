@@ -6,6 +6,7 @@
     "v-design": "/components/design/design",
     "v-content": "/components/content/content",
     "v-video": "/components/video/video",
-    "v-news": "/components/news/news"
+    "v-news": "/components/news/news",
+    "v-actives": "/components/actives/index"
   }
 }

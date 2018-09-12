@@ -7,7 +7,6 @@ class Api extends HTTP {
     super()
   }
   /*根据分类ID获取文章列表
-
   */
   getNews(para, success) {
     let params = {
@@ -37,12 +36,11 @@ class Api extends HTTP {
   }
   getXcById(id, success) {
     let params = {
-      url: 'api/get_post',
+      url: 'api/get_post/',
       success: success,
       data: {
         post_id: id,
-        post_type: 'foogallery',
-        id: id
+        post_type: 'foogallery'
       }
 
     }
