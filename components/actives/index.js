@@ -38,10 +38,20 @@ Component({
   methods: {
     getXc(id) {
       api.getXcById(id, (res) => {
-        console.log(res)
         this.setData({
           imgUrls: res.post.attachments
         })
+      })
+    },
+    previewImage: function(e) {
+      let src = e.target.dataset.src
+      let arr = []
+      this.data.imgUrls.forEach(el=>{
+        arr.push(el.url)
+      })
+      wx.previewImage({
+        current: src,
+        urls: arr
       })
     }
   }

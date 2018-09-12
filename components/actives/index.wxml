@@ -7,7 +7,7 @@
   autoplay="{{false}}" interval="{{5000}}" >
   <block wx:for="{{imgUrls}}" wx:for-index="index" wx:key="{{index}}">
     <swiper-item class="swiper-item" mode="center">
-      <image src="{{item.url}}" class="slide-image" width="355" height="150"/>
+      <image bindtap="previewImage" data-set="{{item.url}}" src="{{item.url}}" class="slide-image" width="355" height="150"/>
     </swiper-item>
   </block>
 </swiper>

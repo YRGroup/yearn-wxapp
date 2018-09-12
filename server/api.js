@@ -7,6 +7,10 @@ class Api extends HTTP {
     super()
   }
   /*根据分类ID获取文章列表
+    @para:
+      count:数量
+      currentPage:页
+      id:分类目录id
   */
   getNews(para, success) {
     let params = {
@@ -20,7 +24,7 @@ class Api extends HTTP {
     }
     this.request(params)
   }
-  //获取单个文章详情
+  //获取单个文章详情 @id：文章id
   getSingleNews(id, success) {
     let params = {
       url: 'api/get_post',
@@ -34,6 +38,7 @@ class Api extends HTTP {
     }
     this.request(params)
   }
+  //获取相册  @id:相册id
   getXcById(id, success) {
     let params = {
       url: 'api/get_post/',
