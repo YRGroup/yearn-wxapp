@@ -1,0 +1,14 @@
+<!-- components/introduce/introduce.wxml -->
+<view class="wrapper">
+  <swiper class="swiper" 
+  indicator-dots="{{true}}"
+  indicator-color="#fff" 
+  indicator-active-color="#114875"
+  autoplay="{{false}}" interval="{{5000}}" >
+  <block wx:for="{{imgUrls}}" wx:for-index="index" wx:key="{{index}}">
+    <swiper-item class="swiper-item">
+      <image mode="aspectFill" bindtap="previewImage" data-src="{{item.url}}" src="{{item.images.medium_large.url}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>

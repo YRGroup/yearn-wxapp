@@ -11,17 +11,6 @@
   z-index: -10;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-  font-size: 42rpx;
-  padding: 40rpx 0;
-}
-
 .container {
   position: absolute;
   top: 160rpx;
@@ -33,29 +22,27 @@
   /* line-height: 42rpx; */
 }
 .news-card{
-  margin: 20rpx 0;
+  padding: 20rpx 0;
 }
 .news-title{
   font-size: 30rpx;
 }
-.btn-wrapper{
-  width: 90%;
-  margin: 20rpx auto;
-}
-.btn-wrapper button{
-  color: #114875 !important;
-  border-color: #114875;
-}
+
 .loading-wrapper{
   text-align: center;
+  padding: 40rpx 0;
 }
-.scrollViewBox{
+.wrapper{
   height: 100%;
 }
-.scrollViewBox .scrollView{
+.scrollView{
   height: 100%;
+  background: #fff;
 }
-.bannerImg{
-  height: 300rpx;
-  width: 100%;
+.noMore{
+  text-align: center;
+  color: #999;
+}
+.thumb-img{
+  width: 400rpx;
 }

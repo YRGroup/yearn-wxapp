@@ -1,11 +1,4 @@
 // components/introduce/introduce.js
-import {
-  formatNewsTitle
-} from "../../utils/util"
-import {
-  Api
-} from "../../server/api";
-let api = new Api();
 
 Component({
   /**

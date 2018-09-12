@@ -5,7 +5,8 @@
   background: #fafafa;
   position: relative;
   box-sizing: border-box;
-  padding: 5px 15px 5px 115px
+  /* padding: 5px 15px 5px 115px; */
+  padding: 5px 15px 5px 155px;
 }
 
 .van-card--center,
@@ -21,7 +22,8 @@
 .van-card__thumb {
   top: 5px;
   left: 15px;
-  width: 90px;
+  /* width: 90px; */
+  width: 130px;
   height: 90px;
   position: absolute
 }

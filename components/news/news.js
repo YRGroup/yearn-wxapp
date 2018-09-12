@@ -1,7 +1,7 @@
 // components/introduce/introduce.js
 import {
   formatNewsTitle
-} from "../../utils/util"
+} from "../../utils/index"
 import {
   Api
 } from "../../server/api";
@@ -11,10 +11,13 @@ Component({
   /**
    * 组件的属性列表
    */
+  options: {
+    multipleSlots: true
+  },
   properties: {
     count: {
       type: Number,
-      value: 3
+      value: 10
     },
     listPage: {
       type: Boolean,
@@ -31,7 +34,6 @@ Component({
     id: 2, //易尔动态的分类目录ID
     loadingMore: false,
     noMore: false
-
   },
   lifetimes: {
     // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
@@ -49,8 +51,7 @@ Component({
    */
   methods: {
     //获取新闻
-    getNews: function (more) {
-
+    getNews(more) {
       if (this.data.noMore) return;
       //显示加载更多ing
       if (more) {
@@ -85,7 +86,7 @@ Component({
         })
       });
     },
-    formatNewsTitle: (str) => {
+    formatNewsTitle(str){
       let reg = /^<.+>(.+)<.+>/;
       return str.match(reg)[1] || '';
     },
@@ -95,17 +96,19 @@ Component({
         url: `../news/index?id=${id}`
       })
     },
-    toNewsPage() {
-      wx.navigateTo({
-        url: `../newsList/index`
-      })
-    },
     //下拉加载
     handleScrollBottom() {
       this.setData({
         currentPage: ++this.data.currentPage
       })
       this.getNews(true)
+    },
+    //scroll
+    handleScroll(ev){
+      this.setData({
+        scrollTop:0
+      })
+      this.triggerEvent('scroll', ev)
     }
   }
 })
