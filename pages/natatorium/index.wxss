@@ -1,1 +1,4 @@
-/* pages/natatorium/index.wxss */
+.banner{
+    width: 100%;
+    height:500rpx;
+}

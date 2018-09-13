@@ -1,0 +1,40 @@
+/* components/swimsourse/index.wxss */
+.couse{
+    width: 100%;
+    margin-top: -15rpx;
+    padding-bottom: 40rpx;
+
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 42rpx;
+    padding: 40rpx 0;
+}
+.item{
+    padding: 0 15rpx;
+}
+.list{
+    display: flex;
+    margin-bottom: 20rpx;
+}
+.list .left{
+    width: 400rpx;
+    height: 320rpx;
+}
+.list .right{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    padding: 20rpx;
+    justify-content: center;
+}
+.couseCon{
+    font-size: 28rpx;
+    color: #666;
+    line-height: 40rpx;
+}

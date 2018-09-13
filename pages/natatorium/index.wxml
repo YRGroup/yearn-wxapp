@@ -1,2 +1,5 @@
 <!--pages/natatorium/index.wxml-->
-<text>pages/natatorium/index.wxml</text>
+<view class="wrapper">
+    <image class="banner" src="../../images/swim/banner.jpg" mode="aspectFill"></image>
+    <v-course foid="{{204}}"></v-course>
+</view>
