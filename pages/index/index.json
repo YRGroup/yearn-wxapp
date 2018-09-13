@@ -7,6 +7,6 @@
     "v-content": "/components/content/content",
     "v-video": "/components/video/video",
     "v-news": "/components/news/news",
-    "v-actives": "/components/actives/index"
+    "v-imgslide": "/components/imgSlide/index"
   }
 }

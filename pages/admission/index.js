@@ -15,7 +15,10 @@ Page({
   data: {
     list1:[],
     list2:[],
-    img_base_url:app.globalData.img_base_url
+    img_base_url:app.globalData.img_base_url,
+    name:'',
+    phone:'',
+    child_age:''
   },
   /**
    * 生命周期函数--监听页面加载

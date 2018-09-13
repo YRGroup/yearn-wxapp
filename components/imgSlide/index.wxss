@@ -1,8 +1,10 @@
 .swiper{
-  height: 400rpx;
+  height: 300rpx;
 }
 .swiper-item{
+  box-sizing: border-box;
   width: 100%;
+  padding: 20rpx 10rpx;
 }
 .swiper-item image{
   height: 100%;

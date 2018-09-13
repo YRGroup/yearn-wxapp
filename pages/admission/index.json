@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "v-slide": "/components/slide/index"
+    "v-slide": "/components/slide/index",
+    "van-field": "/dist/field/index"
   }
 }
