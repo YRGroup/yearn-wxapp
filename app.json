@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/admission/index",
     "pages/index/index",
     "pages/primary/index",
     "pages/kindergarten/index",

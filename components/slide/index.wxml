@@ -1,0 +1,11 @@
+<!--components/introduce/introduce.wxml-->
+<view class="wrapper">
+  <view  class="slide-title" bindtap="handleSlide">
+    <slot name="title"></slot>
+  </view>
+  <view>
+      <van-transition custom-class="slide-content"  name="slide-down" show="{{show}}">
+      <slot name="content"></slot>
+    </van-transition>
+  </view>
+</view>
