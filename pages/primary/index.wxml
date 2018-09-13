@@ -2,14 +2,14 @@
 <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{false}}" vertical="{{true}}" indicator-color="#fff" indicator-active-color="#114875" bindanimationfinish="handleScroll">
   <!-- page1 -->
   <swiper-item
-    style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page1_phone.jpg');"
+    style="background-image: url('{{img_base_url}}page1_phone.jpg');"
   class="swiper-item page1 background-cover">
     <van-transition  show="{{ currentPage==0 }}" custom-class="content" name="fade-up" >
       <text>易尔实验学校是一所全日制双语小学。作为易尔实验园区承上启下的核心教育项目，汲取育人教育集团多年办学经验，融合河南省实验小学师资管理，引进上海世界外国语小学 课程体系，借鉴上海包玉刚实验学校学院制教学，从学生的习惯养成着手，培养具有人文底蕴、科学精神、国际视野、健康生活、实践创新、责任担当的21世纪全球性人才。</text>
     </van-transition>
   </swiper-item >
   <!-- page2 -->
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page2_phone.jpg');" class="swiper-item page2 background-cover flex-column">
+  <swiper-item  style="background-image: url('{{img_base_url}}page2_phone.jpg');" class="swiper-item page2 background-cover flex-column">
     <view class="content">
       <view class="page-title">
         <van-transition show="{{ currentPage==1 }}"  name="slide-down" >
@@ -63,7 +63,7 @@
     </view>
   </swiper-item>
   <!-- page3 -->
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page4_phone.jpg');" class="swiper-item background-cover flex-column page3"> 
+  <swiper-item  style="background-image: url('{{img_base_url}}page4_phone.jpg');" class="swiper-item background-cover flex-column page3"> 
     <view class="content">
         <van-transition show="{{ currentPage==2 }}"  custom-class=" page-title"   name="slide-down" >
           <text>PBL项目制学习</text>
@@ -72,19 +72,19 @@
           <text>项目制学习帮助学生的学业生涯、个人生活、职业生涯更充分发展，从而让学生更从容的面对主客观世界面临的挑战。</text>
         </van-transition>
         <van-transition show="{{ currentPage==2 }}"  custom-class=" page-text"   name="slide-up" >
-          <image src="../../images/primary/primary_img_2.png" mode="aspectFit"> </image> 
+          <image src="{{img_base_url}}primary_img_2.png" mode="aspectFit"> </image> 
         </van-transition>
     </view>
   </swiper-item>
 
   <!-- page4 -->
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page5_phone.jpg');" class="swiper-item background-cover flex-column page4"> 
+  <swiper-item  style="background-image: url('{{img_base_url}}page5_phone.jpg');" class="swiper-item background-cover flex-column page4"> 
     <view class="content">
       <van-transition show="{{ currentPage==3 }}"  custom-class=" page-title"   name="slide-down" >
         <text>师资力量</text>
       </van-transition>
       <van-transition show="{{ currentPage==3 }}"  custom-class=" page-text"   name="fade" >
-        <image src="../../images/primary/primary_img_3.png" mode="aspectFit"> </image> 
+        <image src="{{img_base_url}}primary_img_3.png" mode="aspectFit"> </image> 
       </van-transition>
       <van-transition show="{{ currentPage==3 }}"  custom-class="flex-row icons"   name="slide-up" >
         <view class="flex-item flex-column" style="background:#33babb">
@@ -112,7 +112,7 @@
   <!-- page5 -->
   <swiper-item class="swiper-item background-cover page5">
     <swiper class="swiper"  indicator-dots="{{true}}" autoplay="{{false}}" interval="{{5000}}" duration="{{500}}">
-      <swiper-item style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page6_book.jpg');" class="swiper-item background-cover"> 
+      <swiper-item style="background-image: url('{{img_base_url}}page6_book.jpg');" class="swiper-item background-cover"> 
         <view class="content">
           <view class="title">
             <text class="iconfont">图书馆</text> 
@@ -121,7 +121,7 @@
           </view>
         </view>
       </swiper-item>
-      <swiper-item style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page6_theatre.jpg');" class="swiper-item background-cover"> 
+      <swiper-item style="background-image: url('{{img_base_url}}page6_theatre.jpg');" class="swiper-item background-cover"> 
         <view class="content">
           <view class="title">
             <text class="iconfont">剧场</text> 
@@ -130,7 +130,7 @@
           </view>
         </view>
       </swiper-item>
-      <swiper-item style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page6_music.jpg');" class="swiper-item background-cover"> 
+      <swiper-item style="background-image: url('{{img_base_url}}page6_music.jpg');" class="swiper-item background-cover"> 
         <view class="content">
           <view class="title">
             <text class="iconfont">音乐厅</text> 
@@ -139,7 +139,7 @@
           </view>
         </view>
       </swiper-item>
-      <swiper-item style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page6_art.jpg');" class="swiper-item background-cover"> 
+      <swiper-item style="background-image: url('{{img_base_url}}page6_art.jpg');" class="swiper-item background-cover"> 
         <view class="content">
           <view class="title">
             <text class="iconfont">美术室</text> 
@@ -152,19 +152,19 @@
   </swiper-item>
 
   <!-- page6 -->
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page7_phone.jpg');" class="swiper-item background-cover flex-column page6"> 
+  <swiper-item  style="background-image: url('{{img_base_url}}page7_phone.jpg');" class="swiper-item background-cover flex-column page6"> 
     <view class="content">
       <van-transition show="{{ currentPage==5 }}"  custom-class=" page-text"   name="slide-down" >
         <text>项目制学习帮助学生的学业生涯、个人生活、职业生涯更充分发展，从而让学生更从容的面对主客观世界面临的挑战。</text>
       </van-transition>
       <van-transition show="{{ currentPage==5 }}"  custom-class=" page-text"   name="slide-up" >
-        <image src="../../images/primary/page7class-2.png" mode="aspectFit"> </image> 
+        <image src="{{img_base_url}}page7class-2.png" mode="aspectFit"> </image> 
       </van-transition>
     </view>
   </swiper-item>
 
   <!-- page7 -->
-  <swiper-item  style="background-image: url('http://a1.yearn.com/wp-content/themes/yearn/assets/images/page8_phone.jpg" class="swiper-item background-cover flex-column page7"> 
+  <swiper-item  style="background-image: url('{{img_base_url}}page8_phone.jpg" class="swiper-item background-cover flex-column page7"> 
     <view class="content">
       <van-transition show="{{ currentPage==6 }}"  custom-class=" page-title"   name="slide-down" >
         <text> <text class="circle">K12</text>课程开发实践基地</text>

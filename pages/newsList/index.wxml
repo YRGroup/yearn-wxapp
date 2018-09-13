@@ -1,5 +1,5 @@
 <view class="wrapper">
-  <image class="bannerImg" src="../../images/newsBg.jpg" mode="aspectFill"></image>
+  <image class="bannerImg" src="{{img_base_url}}newBg.jpg" mode="aspectFill"></image>
   <!-- <view class="bg" ></view> -->
   <view class="newsWrapper" style="top:{{posTop+'rpx'}}">
     <v-news count="{{10}}" bind:scroll="handleScroll" ></v-news>
