@@ -9,4 +9,4 @@
     <template is="wxParse" data="{{wxParseData:listParse[index]}}"/>
   </van-transition>
   </view>
-</view>
+</view>  

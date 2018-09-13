@@ -7,5 +7,5 @@
     <view class="container">
         <text decode>{{text}}</text>
     </view>
-    <image class="img" src="{{introduceBg}}" mode="scaleToFill"></image>
+    <image class="img" src="{{introduceBg}}" mode="bottom"></image>
 </view>
