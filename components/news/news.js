@@ -59,7 +59,11 @@ Component({
           loadingMore: true
         })
       }
-    
+      let para = {
+        count: this.data.count,
+        id: this.data.id,
+        currentPage: this.data.currentPage
+      }
       api.getNews(para, (res) => {
         let data = res.posts.map(el => {
           el.excerpt = this.formatNewsTitle(el.excerpt)

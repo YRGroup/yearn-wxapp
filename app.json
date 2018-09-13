@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/admission/index",
     "pages/index/index",
+    "pages/admission/index",
     "pages/primary/index",
     "pages/kindergarten/index",
     "pages/natatorium/index",
