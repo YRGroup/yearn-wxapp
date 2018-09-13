@@ -1,13 +1,24 @@
-.wrapper{
+.wrapper {
   overflow: hidden;
+  padding: 0 20rpx;
 }
-.slide-title{
-  background: #fff;
+
+.slide {
+  margin: 20rpx 0;
 }
-.slide-content{
+
+.slide-title {
+  background: #ef3c56;
+  padding: 20rpx 0 20rpx 40rpx;
+  color: #fff;
+}
+
+.slide-content {
   position: relative;
-  background: red;
+  background: #fafafa;
   z-index: -1;
   overflow: hidden;
-  margin-top: 50rpx;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
 }

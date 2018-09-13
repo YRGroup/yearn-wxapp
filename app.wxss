@@ -1,9 +1,10 @@
 /**app.wxss**/
-page{
+page {
   font-size: 32rpx;
   line-height:48rpx;
   color: #333;
 }
+
 .container {
   height: 100%;
   display: flex;
@@ -12,6 +13,17 @@ page{
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 42rpx;
+  padding: 40rpx 0;
 }
 
 .font-size-16 {
@@ -31,14 +43,16 @@ page{
   background-size: cover;
   background-position: center center;
 }
-.flex-column{
+
+.flex-column {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
 }
-.flex-row{
+
+.flex-row {
   display: flex;
   justify-content: space-around;
 }

@@ -1,4 +1,5 @@
 // components/content/content.js
+const app = getApp()
 Component({
   /**
    * 组件的属性列表
@@ -11,22 +12,22 @@ Component({
    * 组件的初始数据
    */
   data: {
-    img: 'http://a1.yearn.com/wp-content/themes/yearn/assets/images/yearn_codeImg.jpg'
+    img: app.globalData.img_base_url + 'index_banner.jpg'
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    callphone:function() {
+    callphone: function () {
       wx.makePhoneCall({
         phoneNumber: '0371-86666161'
       })
     },
-    openmap:function() {
+    openmap: function () {
       wx.getLocation({
         type: 'gcj02', //返回可以用于wx.openLocation的经纬度
-        success: function(res) {
+        success: function (res) {
           var latitude = res.latitude
           var longitude = res.longitude
           wx.openLocation({
@@ -37,7 +38,7 @@ Component({
         }
       })
     },
-    previewImage: function(e) {
+    previewImage: function (e) {
       let src = e.target.dataset.src
       let arr = []
       arr.push(src)

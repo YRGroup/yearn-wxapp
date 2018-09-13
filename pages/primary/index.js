@@ -1,11 +1,13 @@
 // pages/primary/primary.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    currentPage:0
+    currentPage:0,
+    img_base_url:app.globalData.img_base_url
   },
 
   /**

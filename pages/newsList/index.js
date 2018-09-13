@@ -1,5 +1,6 @@
 // pages/primary/primary.js
 const DEFAULT_TOP = 300;
+const app = getApp()
 Page({
 
   /**
@@ -8,7 +9,8 @@ Page({
   data: {
     currentPage: 0,
     src: '',
-    posTop: DEFAULT_TOP
+    posTop: DEFAULT_TOP,
+    img_base_url: app.globalData.img_base_url
   },
 
   /**
@@ -67,7 +69,7 @@ Page({
 
   },
   handleScroll: function (ev) {
-    let top = DEFAULT_TOP-ev.detail.detail.scrollTop;
+    let top = DEFAULT_TOP - ev.detail.detail.scrollTop;
     if (top < 0) {
       top = 0;
     }
