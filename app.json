@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/natatorium/index",
     "pages/primary/index",
     "pages/admission/index",
     "pages/index/index",

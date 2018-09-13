@@ -1,8 +1,5 @@
 <view class="couse" style="background: url('../../images/swim/mainbg.jpg') repeat">
-    <view class="title">
-      <text >COURSE OFFERED</text>
-      <text >课程设置</text>
-    </view>
+    <v-title text1="111" titl="222"></v-title>
     <view class="item">
       <view class="list" wx:for="{{couseList}}" wx:key="{{index}}">
         <image class="left" src="{{item.url}}" mode="aspectFill"></image>
