@@ -2,6 +2,6 @@
 <view class="banner">
   <image class="img" src="{{bannerBg}}" mode="scaleToFill"></image>
   <view class="admi-btn">
-    <van-button bind:click="toAdmission"  type="primary">招生信息</van-button>
+    <van-button bind:click="toAdmission" plain  type="primary">招生信息</van-button>
   </view>
 </view>
