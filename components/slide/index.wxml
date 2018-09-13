@@ -1,11 +1,12 @@
 <!--components/introduce/introduce.wxml-->
+<import src="../../components/wxParse/wxParse.wxml"/>
 <view class="wrapper">
-  <view  class="slide-title" bindtap="handleSlide">
-    <slot name="title"></slot>
+  <view class="slide" wx:for="{{list}}" wx:key="{{index}}">
+  <view data-index="{{index}}"  class="slide-title title-class" bindtap="handleSlide">
+    {{item.title}}
   </view>
-  <view>
-      <van-transition custom-class="slide-content"  name="slide-down" show="{{show}}">
-      <slot name="content"></slot>
-    </van-transition>
+  <van-transition custom-class="slide-content content-class"  name="slide-down" show="{{index==currentIndex}}">
+    <template is="wxParse" data="{{wxParseData:listParse[index]}}"/>
+  </van-transition>
   </view>
 </view>

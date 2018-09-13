@@ -1,6 +1,5 @@
 // pages/primary/primary.js
-var WxParse = require('../../components/wxParse/wxParse.js');
-
+var app = getApp();
 import {
   formatNewsTitle
 } from "../../utils/index"
@@ -15,32 +14,22 @@ Page({
    */
   data: {
     list1:[],
-    list2:[]
-  },
-  getData(id,success){
-    let para = {
-      id: id,
-      count:5
-    }
-    api.getNews(para, (res) => {
-      success(res)
-    });
+    list2:[],
+    img_base_url:app.globalData.img_base_url
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getData(8,(res)=>{
-      console.log(res)
-      this.setData({
-        list1:res.posts
-      })
-    })
-    this.getData(9,(res)=>{
-      this.setData({
-        list2:res.posts
-      })
-    })
+    // this.getData(9,(res)=>{
+    //   let arr=[]
+    //   res.posts.forEach(el=>{
+    //     arr.push(el.content)
+    //   })
+    //   this.setData({
+    //     list2:arr
+    //   })
+    // })
   },
 
   /**

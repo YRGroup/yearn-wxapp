@@ -1,24 +1,17 @@
+<import src="../../components/wxParse/wxParse.wxml" />
 <view class="wrapper">
-  <image class="bannerImg" src="../../images/newsBg.jpg" mode="aspectFill"></image>
+  <image class="bannerImg" src="{{img_base_url}}newBg.jpg" mode="aspectFill"></image>
   <!-- <view class="bg" ></view> -->
   <view class="title">
     <text>ADMISSION PROBLEMS</text>
     <text>招生解答</text>
   </view>
-  <v-slide 
-  wx:for="{{list1}}" wx:key="index" 
-  wx:for-item="item" 
-  wx:for-index="index" 
-  show="{{true}}">
-    <view slot="title">
-      <text>
-        {{item.title}}
-      </text>
-    </view>
-    <view  slot="content">
-      <text>
-        {{item.content}}
-      </text>
-    </view>
-  </v-slide>
+  <view>
+    <text class="pro-title" style="color:#ef3c56;">招生与录取</text>
+    <v-slide catId="{{8}}" count="{{3}}"></v-slide>
+  </view>
+  <view>
+    <text class="pro-title" style="color: #ed8f25;">招生与录取</text>
+    <v-slide title-class="title2" catId="{{9}}" count="{{2}}"></v-slide>
+  </view>
 </view>
