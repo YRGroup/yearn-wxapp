@@ -1,0 +1,13 @@
+.wrapper{
+  overflow: hidden;
+}
+.slide-title{
+  background: #fff;
+}
+.slide-content{
+  position: relative;
+  background: red;
+  z-index: -1;
+  overflow: hidden;
+  margin-top: 50rpx;
+}

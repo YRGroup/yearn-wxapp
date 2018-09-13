@@ -1,0 +1,24 @@
+<view class="wrapper">
+  <image class="bannerImg" src="../../images/newsBg.jpg" mode="aspectFill"></image>
+  <!-- <view class="bg" ></view> -->
+  <view class="title">
+    <text>ADMISSION PROBLEMS</text>
+    <text>招生解答</text>
+  </view>
+  <v-slide 
+  wx:for="{{list1}}" wx:key="index" 
+  wx:for-item="item" 
+  wx:for-index="index" 
+  show="{{true}}">
+    <view slot="title">
+      <text>
+        {{item.title}}
+      </text>
+    </view>
+    <view  slot="content">
+      <text>
+        {{item.content}}
+      </text>
+    </view>
+  </v-slide>
+</view>
