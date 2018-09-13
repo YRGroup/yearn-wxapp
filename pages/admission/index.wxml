@@ -2,16 +2,49 @@
 <view class="wrapper">
   <image class="bannerImg" src="{{img_base_url}}newBg.jpg" mode="aspectFill"></image>
   <!-- <view class="bg" ></view> -->
-  <view class="title">
-    <text>ADMISSION PROBLEMS</text>
-    <text>招生解答</text>
+  <view>
+    <view class="title">
+      <text>ADMISSION PROBLEMS</text>
+      <text>招生解答</text>
+    </view>
+    <view>
+      <text class="pro-title" style="color:#ef3c56;">招生与录取</text>
+      <v-slide catId="{{8}}" count="{{3}}"></v-slide>
+    </view>
+    <view>
+      <text class="pro-title" style="color: #ed8f25;">招生与录取</text>
+      <v-slide title-class="title2" catId="{{9}}" count="{{2}}"></v-slide>
+    </view>
   </view>
   <view>
-    <text class="pro-title" style="color:#ef3c56;">招生与录取</text>
-    <v-slide catId="{{8}}" count="{{3}}"></v-slide>
+    <view class="title">
+      <text>APPLY lONLINE</text>
+      <text>招生报名</text>
+      <van-cell-group>
+        <van-field
+          value="{{ name }}"
+          required    
+          label="用户名"
+          placeholder="请输入家长姓名"
+        />
+      </van-cell-group>
+      <van-cell-group>
+        <van-field
+          value="{{ phone }}"
+          label="手机号"
+          placeholder="请输入手机联系方式"
+          required
+          border="{{ false }}"
+        />
+        <van-field
+          value="{{ child_age }}"
+          required
+          label="儿童年龄"
+          placeholder="请输入入学儿童年龄"
+          error-message="手机号格式错误"
+        />
+      </van-cell-group>
+    </view>
   </view>
-  <view>
-    <text class="pro-title" style="color: #ed8f25;">招生与录取</text>
-    <v-slide title-class="title2" catId="{{9}}" count="{{2}}"></v-slide>
-  </view>
+
 </view>

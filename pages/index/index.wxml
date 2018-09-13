@@ -20,6 +20,6 @@
     <text>YEARN DYNAMICS</text>
     <text>少儿活动</text>
   </view>
-  <v-actives foid="{{1002}}"></v-actives>
+  <v-imgslide foid="{{1002}}"></v-imgslide>
 </view>
 <v-content></v-content>
