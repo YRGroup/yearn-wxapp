@@ -1,6 +1,10 @@
 {
   "usingComponents": {
     "v-slide": "/components/slide/index",
-    "van-field": "/dist/field/index"
+    "van-field": "/dist/field/index",
+    "van-cell-group": "/dist/cell-group/index",
+    "van-cell": "/dist/cell/index",
+    "van-button": "/dist/button/index",
+    "van-notify": "/dist/notify/index"
   }
 }

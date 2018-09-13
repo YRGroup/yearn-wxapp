@@ -2,6 +2,7 @@
 <v-introduce></v-introduce>
 <v-design></v-design>
 <v-video></v-video>
+
 <view class="news">
   <v-news count="{{4}}" listPage="{{false}}">
     <view class="title" slot="before">
@@ -15,6 +16,7 @@
     </view>
   </v-news>
 </view>
+
 <view style="margin-bottom:30rpx;">
   <view class="title" >
     <text>YEARN DYNAMICS</text>

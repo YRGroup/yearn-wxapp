@@ -19,6 +19,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    toAdmission(){
+      wx.navigateTo({
+        url: '../../pages/admission/index'
+      })
+    }
   }
 })
