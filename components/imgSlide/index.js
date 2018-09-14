@@ -15,6 +15,14 @@ Component({
     foid: {
       type: Number,
       value: 0
+    },
+    mode:{
+      type:String,
+      value:'aspectFill'
+    },
+    height: {
+      type: Number,
+      value: 300
     }
   },
 

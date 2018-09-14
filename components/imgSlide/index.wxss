@@ -1,12 +1,25 @@
-.swiper{
-  height: 300rpx;
+.swiper {
+  /* height: 500rpx; */
 }
-.swiper-item{
+
+.swiper-item {
   box-sizing: border-box;
   width: 100%;
   padding: 20rpx 10rpx;
+  position: relative;
 }
-.swiper-item image{
+
+.swiper-item image {
   height: 100%;
   width: 100%;
+}
+
+.swiper-item .img-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  line-height: 40rpx;
+  font-size: 30rpx;
+  z-index: 2;
 }

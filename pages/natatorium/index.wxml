@@ -8,7 +8,7 @@
             <text>STADIUMS AND STADIUMS</text>
             <text>场馆照片</text>
         </view>
-        <v-imgslide foid="{{1002}}"></v-imgslide>
+        <v-imgslide foid="{{200}}"></v-imgslide>
     </view>
     <!-- <v-facilities></v-facilities> -->
     <view class="stadiums" style="background-image: url('{{img_base_url}}primary_bg_4.png')">
@@ -16,6 +16,6 @@
             <text>TEAM</text>
             <text>服务团队</text>
         </view>
-        <v-imgslide foid="{{994}}"></v-imgslide>
+        <v-imgslide mode="top" foid="{{994}}" height="{{500}}"></v-imgslide>
     </view>
 </view>
