@@ -13,7 +13,7 @@
     </view>
     <view>
       <text class="pro-title" style="color: #ed8f25;">招生与录取</text>
-      <v-slide title-class="title2" catId="{{9}}" count="{{2}}"></v-slide>
+      <v-slide title-class="title2" catId="{{9}}" count="{{3}}"></v-slide>
     </view>
   </view>
   <view class="form-box">
