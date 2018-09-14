@@ -1,0 +1,15 @@
+<!-- components/swimabout/swimabout.wxml -->
+<view class="container" style="background: url('{{img_base_url}}problemsBg.jpg');">
+  <view class="title">
+    <text>ABOUT US</text>
+    <text>游泳馆简介</text>
+  </view>
+  <view class="about">
+    <text>易尔少年游泳馆是易尔实验园区响应、落实教育部立德树人，大力发展素质 教育的号召，重点打造的高标准体育特色项目。结合K12 学段学生身心成长发 育需要，开设多种水上项目课程，配套园区，服务社区。
+        </text>
+    <text>易尔少年游泳馆——一家针对2—15 岁少年儿童而建的一站式儿童游泳馆。 位于郑州市商鼎路万安街交叉口东北角，总建筑面积1800 ㎡，泳池总面积991.44 ㎡。
+        </text>
+    <text>易尔少年游泳馆从父母的角度审视与鞭策自己，所以无论是在泳池的设计、 环境的准备、培训课的设置等大方面的安排，还是在水温的控制、专业的教学技 术、物品的选择等细节方面的考虑，均在保证安全的基础上，选用最优的、最适 合孩子的方案。
+        </text>
+  </view>
+</view>

@@ -1,4 +1,0 @@
-<view class="title">
-    <text>{{text1}}</text>
-    <text>{{text2}}</text>
-</view>

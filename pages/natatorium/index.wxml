@@ -1,5 +1,14 @@
-<!--pages/natatorium/index.wxml-->
+<!-- pages/natatorium/index.wxml -->
 <view class="wrapper">
-    <image class="banner" src="../../images/swim/banner.jpg" mode="aspectFill"></image>
+    <image class="banner" src="{{img_base_url}}swim_banner.jpg" mode="aspectFill"></image>
     <v-course foid="{{204}}"></v-course>
+    <v-about></v-about>
+    <view class="stadiums" style="background-image: url('{{img_base_url}}swim_bg_2.png')">
+        <view class="title" style="color:#fff">
+            <text>STADIUMS AND STADIUMS</text>
+            <text>场馆照片</text>
+        </view>
+        <v-imgslide foid="{{1002}}"></v-imgslide>
+    </view>
+    <v-facilities></v-facilities>
 </view>

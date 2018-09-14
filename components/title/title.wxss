@@ -1,9 +1,0 @@
-.title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 42rpx;
-    padding: 40rpx 0;
-}

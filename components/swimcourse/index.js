@@ -34,7 +34,6 @@ Component({
         this.setData({
           couseList: res.post.attachments
         })
-        console.log(this.data.couseList)
       })
     },
   }

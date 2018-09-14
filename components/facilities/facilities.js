@@ -1,17 +1,10 @@
-// components/title/title.js
+// components/facilities/facilities.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    text1: {
-      type: String,
-      value: 'Enlish',
-    },
-    text2: {
-      type: String,
-      value: 'Chinease',
-    },
+
   },
 
   /**

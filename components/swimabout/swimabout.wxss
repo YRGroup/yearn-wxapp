@@ -1,0 +1,19 @@
+/* components/swimabout/swimabout.wxss */
+.container{
+    background-size: cover;
+    padding: 40rpx;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 42rpx;
+    padding: 40rpx 0;
+}
+
+
+.about text{
+    display: inline-block;
+    text-indent: 60rpx;
+}

@@ -4,6 +4,7 @@
   indicator-active-color="#114875"
   autoplay="{{true}}" 
   interval="{{5000}}" 
+  current="1"
   previous-margin="150rpx"
   next-margin="150rpx"
   >

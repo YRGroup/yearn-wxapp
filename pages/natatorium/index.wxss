@@ -2,3 +2,9 @@
     width: 100%;
     height:500rpx;
 }
+.stadiums{
+    margin-top: -24rpx;
+    padding: 40rpx 0;
+}
+.title{
+}
