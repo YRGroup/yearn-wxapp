@@ -1,4 +1,5 @@
 // pages/primary/primary.js
+import Notify from '../../dist/notify/notify';
 var app = getApp();
 import {
   formatNewsTitle
@@ -13,12 +14,43 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list1:[],
-    list2:[],
-    img_base_url:app.globalData.img_base_url,
-    name:'',
-    phone:'',
-    child_age:''
+    list1: [],
+    list2: [],
+    img_base_url: app.globalData.img_base_url,
+    name: '',
+    phone: '',
+    student_age: ''
+  },
+  commit() {
+    if (!this.data.name) {
+      this.msg('姓名不能为空');
+      return
+    }
+    if (!this.data.phone) {
+      this.msg('手机号不能为空');
+      return
+    }
+    if (!this.data.child_age) {
+      this.msg('孩子年龄不能为空');
+      return
+    }
+    let para = {
+      name: this.data.name,
+      phone: this.data.phone,
+      student_age: this.data.student_age,
+      school: '易尔实验学校'
+    }
+    api.commitUser(para,(res)=>{
+      consolelog(res)
+    })
+  },
+  msg(msg) {
+    Notify({
+      text: msg,
+      duration: 1000,
+      selector: '#custom-selector',
+      backgroundColor: 'red'
+    });
   },
   /**
    * 生命周期函数--监听页面加载

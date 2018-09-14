@@ -36,3 +36,10 @@ page {
 .title2 {
   background: #ed8f25 !important;
 }
+.form-box{
+  margin-bottom: 80rpx;
+  padding: 0 20rpx;
+}
+.commit-btn{
+  margin-top: 30rpx;
+}

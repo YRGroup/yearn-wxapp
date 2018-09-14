@@ -51,6 +51,15 @@ class Api extends HTTP {
     }
     this.request(params)
   }
+  //获取相册  @id:相册id
+  commitUser(para) {
+    let params = {
+      url: 'http://a1.yearn.com/wp-content/themes/yearn/schoolsignup/addschoolsignup.php',
+      success: success,
+      data: para
+    }
+    this.request(params)
+  }
 
 }
 
