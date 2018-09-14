@@ -1,5 +1,5 @@
 const config = {
-  api_blink_url: 'http://a1.yearn.com/',
+  api_blink_url: 'https://s.yearn.com/',
   appkey: ''
 }
 

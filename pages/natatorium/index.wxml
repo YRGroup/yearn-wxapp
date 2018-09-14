@@ -10,5 +10,12 @@
         </view>
         <v-imgslide foid="{{1002}}"></v-imgslide>
     </view>
-    <v-facilities></v-facilities>
+    <!-- <v-facilities></v-facilities> -->
+    <view class="stadiums" style="background-image: url('{{img_base_url}}primary_bg_4.png')">
+        <view class="title" style="color:#fff">
+            <text>TEAM</text>
+            <text>服务团队</text>
+        </view>
+        <v-imgslide foid="{{994}}"></v-imgslide>
+    </view>
 </view>
