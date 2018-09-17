@@ -24,7 +24,6 @@ Page({
     reg_phone:/^1[3,4,5,7,8][0-9]{9}$/
   },
   commit() {
-    console.log(this.data.name)
     if (!this.data.name) {
       this.msg('姓名不能为空');
       return
@@ -33,7 +32,7 @@ Page({
       this.msg('手机号不能为空');
       return
     }
-    let  reg_phone=/^1[3,4,5,7,8][0-9]{9}$/;
+    let reg_phone=/^1[3,4,5,7,8][0-9]{9}$/;
     if(!reg_phone.test(this.data.phone)){
       this.msg('手机号格式不正确');
       return
@@ -48,9 +47,7 @@ Page({
       student_age: this.data.student_age,
       school: '易尔实验学校'
     }
-    console.log(para)
     api.commitUser(para,(res)=>{
-      console.log(res)
       if(res){
         Dialog.alert({
           message: '提交成功，工作人员会在两个工作日内与您联系；感谢您的关注。'

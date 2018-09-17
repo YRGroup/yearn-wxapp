@@ -5,6 +5,8 @@
 
 .slide {
   margin: 20rpx 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .slide-title {
@@ -18,19 +20,35 @@
   background: #fafafa;
   z-index: -1;
   overflow: hidden;
-  /* padding: 20rpx 20rpx 20rpx 20rpx; */
   line-height: 40rpx;
   font-size: 30rpx;
-  animation: slide-down 1s ease both;
+  padding: 20rpx;
+  /* animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; */
+  transition: all .5s;
 }
-@keyframes slide-down {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-    height: 0;
-    opacity: 0;
-  }
+
+.slide-dowm {
+  transform: translate3d(0, 0 0);
+  margin-top: 0;
+}
+
+.slide-up {
+  transform: translate3d(0, -100%, 0);
+  margin-top: -100%;
+}
+
+/* @keyframes slide-down {
   to {
-    height: auto;
-    opacity: 1;
+    transform: translate3d(0, 0 0);
+    margin-top: 0;
   }
 }
+
+@keyframes slide-up {
+  to {
+    transform: translate3d(0, -100%, 0);
+    margin-top: -100%;
+  }
+} */

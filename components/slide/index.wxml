@@ -2,15 +2,15 @@
 <import src="../../components/wxParse/wxParse.wxml"/>
 <view class="wrapper">
   <view class="slide" wx:for="{{list}}" wx:key="{{index}}">
-  <view data-index="{{index}}"  class="slide-title title-class" bindtap="handleSlide">
-    {{item.title}}
-  </view>
-  <view class="slide-content content-class"
-    style="{{index==currentIndex?'':'display:none'}}">
-    <template is="wxParse" data="{{wxParseData:listParse[index]}}"/>
-  </view>
-  <!-- <van-transition custom-class="slide-content content-class"  name="slide-down" show="{{index==currentIndex}}">
-    <template is="wxParse" data="{{wxParseData:listParse[index]}}"/>
-  </van-transition> -->
+    <view data-index="{{index}}"  class="slide-title title-class" bindtap="handleSlide">
+      {{item.title}}
+    </view>
+    <view style="overflow:hidden;">
+      <view 
+      class="content-class slide-content {{index==currentIndex?'slide-down':'slide-up'}}"
+      >
+        <template is="wxParse" data="{{wxParseData:listParse[index]}}"/>
+      </view>
+    </view>
   </view>
 </view>  

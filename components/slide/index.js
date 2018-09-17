@@ -59,7 +59,6 @@ Component({
    */
   methods: {
     handleSlide(ev) {
-      console.log(ev)
       let index = ev.currentTarget.dataset.index
       if (index == this.data.currentIndex) {
         this.setData({

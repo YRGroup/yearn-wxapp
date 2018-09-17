@@ -39,6 +39,7 @@ page {
 .form-box{
   margin-bottom: 80rpx;
   padding: 0 20rpx;
+  overflow: hidden;
 }
 .commit-btn{
   margin-top: 30rpx;

@@ -31,7 +31,7 @@ Component({
   methods: {
     getData(id) {
       api.getXcById(id, (res) => {
-        
+        console.log(res)
         this.setData({
           couseList: res.post.attachments
         })
