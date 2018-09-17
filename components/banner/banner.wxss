@@ -28,10 +28,6 @@
 .btn2{
     background: #e95875;
 }
-
-.button-hover {
-    opacity: .8;
-  }
   .admi-btn{
     position: absolute;
     left: 0;
@@ -39,4 +35,14 @@
     bottom: 50rpx;
     margin: 0 auto;
     text-align: center;
+    width: 360rpx;
   }
+  button{
+    border: none;
+    background-color: #114875;
+    color: #fff;
+  }
+ .button-hover {
+  background-color: red;
+  opacity: .8;
+}

@@ -25,4 +25,5 @@
         </view>
         <v-slide catId="{{20}}"></v-slide>
     </view>
+    <v-content></v-content>
 </view>

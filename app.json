@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/admission/index",
     "pages/natatorium/index",
-    "pages/index/index",
     "pages/primary/index",
     "pages/kindergarten/index",
     "pages/newsList/index",
