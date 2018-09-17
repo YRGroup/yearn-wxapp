@@ -3,6 +3,7 @@
     "v-course": "/components/swimcourse/index",
     "v-about": "/components/swimabout/swimabout",
     "v-imgslide": "/components/imgSlide/index",
+    "v-slide": "/components/slide/index",
     "v-facilities": "/components/facilities/facilities"
   }
 }
