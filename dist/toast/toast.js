@@ -1,20 +1,24 @@
-import { isObj } from '../utils/index';
+import { isObj } from '../common/utils';
 
 const defaultOptions = {
   type: 'text',
   mask: false,
   message: '',
   show: true,
+  zIndex: 1000,
   duration: 3000,
   position: 'middle',
   forbidClick: false,
   loadingType: 'circular',
   selector: '#van-toast'
 };
-const parseOptions = message => isObj(message) ? message : { message };
 
 let queue = [];
 let currentOptions = { ...defaultOptions };
+
+function parseOptions(message) {
+  return isObj(message) ? message : { message };
+}
 
 function Toast(options = {}) {
   options = {

@@ -1,6 +1,6 @@
 <view class="custom-class van-card">
   <view class="van-card__thumb">
-    <image mode="aspectFill" wx:if="{{ thumb }}" src="{{ thumb }}" class="van-card__img thumb-class" />
+    <image wx:if="{{ thumb }}" src="{{ thumb }}" class="van-card__img thumb-class" />
     <slot wx:else name="thumb" />
   </view>
   <view class="van-card__content">
