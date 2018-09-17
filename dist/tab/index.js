@@ -1,25 +1,30 @@
-const TABS_PATH = '../tabs/index';
+import { create } from '../common/create';
 
-Component({
-  options: {
-    addGlobalClass: true
-  },
-
-  properties: {
-    disabled: Boolean,
+create({
+  props: {
+    disabled: {
+      type: Boolean,
+      observer() {
+        const parent = this.getRelationNodes('../tabs/index')[0];
+        if (parent) {
+          parent.updateTabs();
+        }
+      }
+    },
     title: {
       type: String,
       observer() {
-        const parent = this.getRelationNodes(TABS_PATH)[0];
+        const parent = this.getRelationNodes('../tabs/index')[0];
         if (parent) {
           parent.setLine();
+          parent.updateTabs();
         }
       }
     }
   },
 
   relations: {
-    [TABS_PATH]: {
+    '../tabs/index': {
       type: 'ancestor'
     }
   },

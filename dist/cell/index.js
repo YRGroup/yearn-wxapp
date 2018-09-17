@@ -1,19 +1,13 @@
-Component({
-  externalClasses: [
-    'custom-class',
+import { create } from '../common/create';
+
+create({
+  classes: [
     'title-class',
     'label-class',
-    'value-class',
-    'left-icon-class',
-    'right-icon-class'
+    'value-class'
   ],
 
-  options: {
-    multipleSlots: true,
-    addGlobalClass: true
-  },
-
-  properties: {
+  props: {
     title: null,
     value: null,
     url: String,
@@ -25,7 +19,6 @@ Component({
     clickable: Boolean,
     titleWidth: String,
     customStyle: String,
-    arrowDirection: String,
     linkType: {
       type: String,
       value: 'navigateTo'
@@ -36,13 +29,30 @@ Component({
     }
   },
 
+  computed: {
+    cellClass() {
+      const { data } = this;
+      return this.classNames('custom-class', 'van-cell', {
+        'van-hairline': data.border,
+        'van-cell--center': data.center,
+        'van-cell--required': data.required,
+        'van-cell--clickable': data.isLink || data.clickable
+      });
+    },
+
+    titleStyle() {
+      const { titleWidth } = this.data;
+      return titleWidth ? `max-width: ${titleWidth};min-width: ${titleWidth}` : '';
+    }
+  },
+
   methods: {
     onClick() {
       const { url } = this.data;
       if (url) {
         wx[this.data.linkType]({ url });
       }
-      this.triggerEvent('click');
+      this.$emit('click');
     }
   }
 });

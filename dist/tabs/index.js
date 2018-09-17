@@ -1,29 +1,20 @@
-const TAB_PATH = '../tab/index';
+import { create } from '../common/create';
 
-Component({
-  options: {
-    addGlobalClass: true
-  },
-
+create({
   relations: {
-    [TAB_PATH]: {
+    '../tab/index': {
       type: 'descendant',
 
-      linked(target) {
-        const { tabs } = this.data;
-        tabs.push({
-          instance: target,
-          data: target.data
+      linked(child) {
+        this.data.tabs.push({
+          instance: child,
+          data: child.data
         });
-        this.setData({
-          tabs,
-          scrollable: tabs.length > this.data.swipeThreshold
-        });
-        this.setActiveTab();
+        this.updateTabs();
       },
 
-      unlinked(target) {
-        const tabs = this.data.tabs.filter(item => item.instance !== target);
+      unlinked(child) {
+        const tabs = this.data.tabs.filter(item => item.instance !== child);
         this.setData({
           tabs,
           scrollable: tabs.length > this.data.swipeThreshold
@@ -33,7 +24,7 @@ Component({
     }
   },
 
-  properties: {
+  props: {
     color: {
       type: String,
       observer: 'setLine'
@@ -44,7 +35,8 @@ Component({
     },
     active: {
       type: null,
-      value: 0
+      value: 0,
+      observer: 'setActiveTab'
     },
     type: {
       type: String,
@@ -77,8 +69,17 @@ Component({
   },
 
   methods: {
+    updateTabs() {
+      const { tabs } = this.data;
+      this.setData({
+        tabs,
+        scrollable: tabs.length > this.data.swipeThreshold
+      });
+      this.setActiveTab();
+    },
+
     trigger(eventName, index) {
-      this.triggerEvent(eventName, {
+      this.$emit(eventName, {
         index,
         title: this.data.tabs[index].data.title
       });
@@ -99,18 +100,7 @@ Component({
         this.trigger('change', active);
         this.setData({ active });
         this.setActiveTab();
-        this.setLine();
-        this.scrollIntoView();
       }
-    },
-
-    getRect(selector, callback, all) {
-      wx.createSelectorQuery()
-        .in(this)[all ? 'selectAll' : 'select'](selector)
-        .boundingClientRect(rect => {
-          rect && callback(rect);
-        })
-        .exec();
     },
 
     setLine() {
@@ -118,7 +108,7 @@ Component({
         return;
       }
 
-      this.getRect('.van-tab', rects => {
+      this.getRect('.van-tab', true).then(rects => {
         const rect = rects[this.data.active];
         const width = this.data.lineWidth || rect.width;
         let left = rects
@@ -134,7 +124,7 @@ Component({
             transition-duration: ${this.data.duration}s;
           `
         });
-      }, true);
+      });
     },
 
     setActiveTab() {
@@ -151,6 +141,9 @@ Component({
           item.instance.setData(data);
         }
       });
+
+      this.setLine();
+      this.scrollIntoView();
     },
 
     // scroll active tab into view
@@ -159,20 +152,20 @@ Component({
         return;
       }
 
-      this.getRect('.van-tab', tabRects => {
+      this.getRect('.van-tab', true).then(tabRects => {
         const tabRect = tabRects[this.data.active];
         const offsetLeft = tabRects
           .slice(0, this.data.active)
           .reduce((prev, curr) => prev + curr.width, 0);
         const tabWidth = tabRect.width;
 
-        this.getRect('.van-tabs__nav', navRect => {
+        this.getRect('.van-tabs__nav').then(navRect => {
           const navWidth = navRect.width;
           this.setData({
             scrollLeft: offsetLeft - (navWidth - tabWidth) / 2
           });
         });
-      }, true);
+      });
     }
   }
 });

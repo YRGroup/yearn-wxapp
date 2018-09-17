@@ -1,15 +1,15 @@
-import Toast from './toast';
+import { create } from '../common/create';
 
-Component({
-  options: {
-    addGlobalClass: true
-  },
-
-  properties: {
+create({
+  props: {
     show: Boolean,
     mask: Boolean,
     message: String,
     forbidClick: Boolean,
+    zIndex: {
+      type: Number,
+      value: 1000
+    },
     type: {
       type: String,
       value: 'text'
@@ -32,5 +32,3 @@ Component({
     }
   }
 });
-
-export default Toast;

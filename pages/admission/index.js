@@ -1,5 +1,6 @@
 // pages/primary/primary.js
 import Notify from '../../dist/notify/notify';
+import Dialog from '../../dist/dialog/dialog';
 var app = getApp();
 import {
   formatNewsTitle
@@ -19,9 +20,11 @@ Page({
     img_base_url: app.globalData.img_base_url,
     name: '',
     phone: '',
-    student_age: ''
+    student_age: '',
+    reg_phone:/^1[3,4,5,7,8][0-9]{9}$/
   },
   commit() {
+    console.log(this.data.name)
     if (!this.data.name) {
       this.msg('姓名不能为空');
       return
@@ -30,7 +33,12 @@ Page({
       this.msg('手机号不能为空');
       return
     }
-    if (!this.data.child_age) {
+    let  reg_phone=/^1[3,4,5,7,8][0-9]{9}$/;
+    if(!reg_phone.test(this.data.phone)){
+      this.msg('手机号格式不正确');
+      return
+    }
+    if (!this.data.student_age) {
       this.msg('孩子年龄不能为空');
       return
     }
@@ -40,8 +48,14 @@ Page({
       student_age: this.data.student_age,
       school: '易尔实验学校'
     }
+    console.log(para)
     api.commitUser(para,(res)=>{
-      consolelog(res)
+      console.log(res)
+      if(res){
+        Dialog.alert({
+          message: '提交成功，工作人员会在两个工作日内与您联系；感谢您的关注。'
+        })
+      }
     })
   },
   msg(msg) {
@@ -50,6 +64,12 @@ Page({
       duration: 1000,
       selector: '#custom-selector',
       backgroundColor: 'red'
+    });
+  },
+  onChange(e){
+    let name=e.target.dataset.name;
+    this.setData({
+      [name]: e.detail
     });
   },
   /**
