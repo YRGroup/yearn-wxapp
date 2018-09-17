@@ -12,7 +12,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    img: app.globalData.img_base_url + 'index_banner.jpg'
+    codeImg: app.globalData.img_base_url + 'yearn_codeImg.jpg'
   },
 
   /**

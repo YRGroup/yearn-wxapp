@@ -11,8 +11,8 @@
   >
   <block wx:for="{{imgUrls}}" wx:for-index="index" wx:key="{{index}}">
     <swiper-item class="swiper-item">
-      <image mode="{{mode}}" bindtap="previewImage" data-src="{{item.url}}" src="{{item.images.medium_large.url}}" class="slide-image" />
-      <text class="img-title">{{item.title}}</text>
+      <image mode="{{mode}}" bindtap="previewImage" data-src="{{item.url}}" src="{{item.images.medium.url}}" class="slide-image" />
+      <!-- <text class="img-title">{{item.title}}</text> -->
     </swiper-item>
   </block>
 </swiper>

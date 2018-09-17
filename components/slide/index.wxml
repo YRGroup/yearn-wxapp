@@ -5,8 +5,12 @@
   <view data-index="{{index}}"  class="slide-title title-class" bindtap="handleSlide">
     {{item.title}}
   </view>
-  <van-transition custom-class="slide-content content-class"  name="slide-down" show="{{index==currentIndex}}">
+  <view class="slide-content content-class"
+    style="{{index==currentIndex?'':'display:none'}}">
     <template is="wxParse" data="{{wxParseData:listParse[index]}}"/>
-  </van-transition>
+  </view>
+  <!-- <van-transition custom-class="slide-content content-class"  name="slide-down" show="{{index==currentIndex}}">
+    <template is="wxParse" data="{{wxParseData:listParse[index]}}"/>
+  </van-transition> -->
   </view>
 </view>  

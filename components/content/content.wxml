@@ -3,7 +3,7 @@
     <view class="box">
         <view class="item logoPic">
             <image class="logo" mode="aspectFit" src="../../images/logo2.png"></image>
-            <image class="code" mode="aspectFit" src="../../images/codeImg.jpg" data-src="{{img}}" bindtap="previewImage"></image>
+            <image class="code" mode="aspectFit" src="{{codeImg}}" data-src="{{codeImg}}" bindtap="previewImage"></image>
         </view>
         <view class="item" bindtap="openmap">
             <image class="icon" src="../../images/index/address.png"></image>

@@ -1,6 +1,6 @@
 import { Api } from "../../server/api";
 let api = new Api();
-
+const app = getApp()
 Component({
   /**
    * 组件的属性列表
@@ -21,7 +21,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    couseList: []
+    couseList: [],
+    img_base_url:app.globalData.img_base_url
   },
 
   /**

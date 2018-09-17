@@ -18,7 +18,19 @@
   background: #fafafa;
   z-index: -1;
   overflow: hidden;
-  padding: 20rpx 20rpx 20rpx 20rpx;
+  /* padding: 20rpx 20rpx 20rpx 20rpx; */
   line-height: 40rpx;
   font-size: 30rpx;
+  animation: slide-down 1s ease both;
+}
+@keyframes slide-down {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: auto;
+    opacity: 1;
+  }
 }

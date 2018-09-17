@@ -35,6 +35,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    img_base_url:'http://a1.yearn.com/wp-content/themes/yearn/assets/images/'
+    img_base_url:'https://s.yearn.com/wp-content/themes/yearn/assets/images/'
   }
 })
