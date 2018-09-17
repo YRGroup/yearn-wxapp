@@ -10,7 +10,7 @@
 }
 
 .slide-title {
-  background: #ef3c56;
+  background: #114875;
   padding: 20rpx 0 20rpx 40rpx;
   color: #fff;
 }

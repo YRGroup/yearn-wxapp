@@ -12,10 +12,18 @@
     </view>
     <!-- <v-facilities></v-facilities> -->
     <view class="stadiums" style="background-image: url('{{img_base_url}}primary_bg_4.png')">
-        <view class="title" style="color:#fff">
+        <view class="title">
             <text>TEAM</text>
             <text>服务团队</text>
         </view>
-        <v-imgslide mode="top" foid="{{994}}" height="{{500}}"></v-imgslide>
+        <v-imgslide foid="{{994}}" height="{{600}}"></v-imgslide>
     </view>
+    <view class="stadiums">
+        <view class="title">
+            <text>PARENTS Q&A</text>
+            <text>家长问答</text>
+        </view>
+        <v-slide catId="{{20}}"></v-slide>
+    </view>
+    <v-content></v-content>
 </view>
