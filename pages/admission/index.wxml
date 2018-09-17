@@ -12,7 +12,7 @@
       <v-slide catId="{{8}}" count="{{3}}"></v-slide>
     </view>
     <view>
-      <text class="pro-title" style="color: #ed8f25;">招生与录取</text>
+      <text class="pro-title" style="color: #ed8f25;">特色及其他</text>
       <v-slide title-class="title2" catId="{{9}}" count="{{3}}"></v-slide>
     </view>
   </view>
