@@ -1,3 +1,4 @@
+@import "animate.wxss";
 .wrapper {
   overflow: hidden;
   padding: 0 20rpx;
@@ -14,29 +15,16 @@
   padding: 20rpx 0 20rpx 40rpx;
   color: #fff;
 }
-
-.slide-content {
-  position: relative;
+.content-wrapper{
   background: #fafafa;
-  z-index: -1;
-  overflow: hidden;
+  overflow:auto;
+  transition:all .5s;
+}
+.slide-content {
   line-height: 40rpx;
   font-size: 30rpx;
   padding: 20rpx;
-  /* animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards; */
-  transition: all .5s;
-}
-
-.slide-dowm {
-  transform: translate3d(0, 0 0);
-  margin-top: 0;
-}
-
-.slide-up {
-  transform: translate3d(0, -100%, 0);
-  margin-top: -100%;
+  overflow: auto;
 }
 
 /* @keyframes slide-down {

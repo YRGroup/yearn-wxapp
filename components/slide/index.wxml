@@ -5,10 +5,8 @@
     <view data-index="{{index}}"  class="slide-title title-class" bindtap="handleSlide">
       {{item.title}}
     </view>
-    <view style="overflow:hidden;">
-      <view 
-      class="content-class slide-content {{index==currentIndex?'slide-down':'slide-up'}}"
-      >
+    <view class="content-wrapper animated" style=" {{index==currentIndex?'height:500rpx':'height:0'}};">
+      <view class="content-class slide-content">
         <template is="wxParse" data="{{wxParseData:listParse[index]}}"/>
       </view>
     </view>
