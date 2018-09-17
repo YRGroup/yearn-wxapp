@@ -17,14 +17,20 @@
   "tabBar": {
     "list": [{
         "pagePath": "pages/index/index",
+        "selectedIconPath": "/images/icon/index.png",
+        "iconPath": "/images/icon/indexS.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/primary/index",
+        "selectedIconPath": "/images/icon/nprimary.png",
+        "iconPath": "/images/icon/nprimaryS.png",
         "text": "小学"
       },
       {
         "pagePath": "pages/natatorium/index",
+        "selectedIconPath": "/images/icon/natatorium.png",
+        "iconPath": "/images/icon/natatoriumS.png",
         "text": "游泳馆"
       }
     ]
