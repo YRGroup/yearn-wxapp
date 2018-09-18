@@ -1,7 +1,7 @@
 <!--components/banner/banner.wxml-->
 <view class="banner">
   <image class="img" src="{{bannerBg}}" mode="scaleToFill"></image>
-  <view class="admi-btn">
+  <!-- <view class="admi-btn">
     <button bindtap="toAdmission">招生信息</button>
-  </view>
+  </view> -->
 </view>

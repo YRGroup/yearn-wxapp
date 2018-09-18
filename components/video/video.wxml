@@ -1,4 +1,4 @@
 <!--components/introduce/introduce.wxml-->
 <view class="wrapper">
-  <video src="{{videoSrc}}"></video>
+  <video src="{{videoSrc}}" poster="{{cover}}"></video>
 </view>

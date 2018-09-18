@@ -1,4 +1,5 @@
 // components/introduce/introduce.js
+const app = getApp();
 
 Component({
   /**
@@ -15,7 +16,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    videoSrc: "http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/yearn/becomingwhoyouare.mp4"
+    videoSrc: "http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/yearn/becomingwhoyouare.mp4",
+    cover:app.globalData.img_base_url+'cover.png'
   },
   lifetimes: {
     // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
