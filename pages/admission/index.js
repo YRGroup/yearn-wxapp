@@ -21,6 +21,8 @@ Page({
     name: '',
     phone: '',
     student_age: '',
+    schools:['易尔幼儿园','易儿实验学校'],
+    school_name:'易尔幼儿园',
     reg_phone:/^1[3,4,5,7,8][0-9]{9}$/
   },
   commit() {
@@ -45,7 +47,7 @@ Page({
       name: this.data.name,
       phone: this.data.phone,
       student_age: this.data.student_age,
-      school: '易尔实验学校'
+      school: this.data.school_name
     }
     api.commitUser(para,(res)=>{
       if(res){
@@ -68,6 +70,11 @@ Page({
     this.setData({
       [name]: e.detail
     });
+  },
+  bindPickerChange: function(e) {
+    this.setData({
+      school_name: this.data.schools[e.detail.value]
+    })
   },
   /**
    * 生命周期函数--监听页面加载

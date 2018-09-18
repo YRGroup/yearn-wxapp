@@ -2,6 +2,7 @@
 
 page {
   height: 100%;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -39,8 +40,19 @@ page {
 .form-box{
   margin-bottom: 80rpx;
   padding: 0 20rpx;
+  box-sizing: border-box;
   overflow: hidden;
 }
 .commit-btn{
   margin-top: 30rpx;
+}
+.input-group{
+  width: 100%;
+  overflow: hidden;
+}
+.schoolpick{
+  line-height: 60rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  padding-left:30rpx
 }

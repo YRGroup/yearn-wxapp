@@ -2,7 +2,7 @@
 <view class="wrapper">
   <image class="bannerImg" src="{{img_base_url}}newBg.jpg" mode="aspectFill"></image>
   <!-- <view class="bg" ></view> -->
-  <view>
+  <!-- <view>
     <view class="title">
       <text>ADMISSION PROBLEMS</text>
       <text>招生解答</text>
@@ -15,17 +15,22 @@
       <text class="pro-title" style="color: #ed8f25;">特色及其他</text>
       <v-slide title-class="title2" catId="{{9}}" count="{{3}}"></v-slide>
     </view>
-  </view>
+  </view> -->
   <view class="form-box">
     <view class="title">
       <text>APPLY lONLINE</text>
       <text>招生报名</text>
     </view>
-    <van-cell-group>
+    <van-cell-group custom-class="input-group">
       <van-field bind:change="onChange" border="{{ true }}" data-name="name" value="{{ name }}" required label="您的称呼:" placeholder="" />
       <van-field bind:change="onChange" value="{{ phone }}" data-name="phone" label="手机号:" placeholder="" required />
-      <van-field bind:change="onChange"  value="{{ student_age }}" data-name="student_age" required label="儿童年龄:" placeholder="" error-message="" />
+      <van-field bind:change="onChange"  value="{{ student_age }}" data-name="student_age" required label="儿童年龄:" placeholder="" error-message="" border="{{ false }}"/>
     </van-cell-group>
+    <picker class="schoolpick" bindchange="bindPickerChange" value="{{index}}" range="{{schools}}">
+      <view class="picker">
+        咨询校部：{{school_name}}
+      </view>
+    </picker>
     <van-button custom-class="commit-btn" slot="button" size="large" type="primary" bind:click="commit">提交</van-button>
   </view>
   <van-notify id="custom-selector" />
