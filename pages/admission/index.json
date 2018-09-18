@@ -6,6 +6,7 @@
     "van-cell": "/dist/cell/index",
     "van-button": "/dist/button/index",
     "van-notify": "/dist/notify/index",
-    "van-dialog": "/dist/dialog/index"
+    "van-dialog": "/dist/dialog/index",
+    "v-content": "/components/content/content"
   }
 }
