@@ -1,4 +1,8 @@
 // pages/primary/primary.js
+import {
+  config
+} from "../../config"
+
 Page({
 
   /**
@@ -17,7 +21,7 @@ Page({
       wx.navigateBack()
       return;
     }
-    let src = `http://a1.yearn.com/allnews/news/${options.id}.html?weapp=1`
+    let src = `${config.api_blink_url}/allnews/news/${options.id}.html?weapp=1`
     this.setData({
       src: src
     })
