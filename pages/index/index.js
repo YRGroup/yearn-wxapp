@@ -67,5 +67,9 @@ Page({
       url: `../newsList/index`
     })
   },
-
+  toAdmission(){
+    wx.navigateTo({
+      url: '../../pages/admission/index'
+    })
+  }
 })

@@ -32,3 +32,16 @@
 .news{
   margin-bottom: 40rpx;
 }
+.fix-btn{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right: 60rpx;
+  bottom: 100rpx;
+  background: #13415a;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+  z-index: 99;
+}

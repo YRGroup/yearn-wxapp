@@ -25,4 +25,7 @@
   <v-imgslide foid="{{1002}}"></v-imgslide>
 </view>
 <v-content></v-content>
+<view class="fix-btn"  bindtap="toAdmission">
+  招生
+</view>
 
