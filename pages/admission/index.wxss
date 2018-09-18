@@ -37,10 +37,10 @@ page {
   background: #ed8f25 !important;
 }
 .form-box{
-  margin-bottom: 80rpx;
-  padding:0 20rpx 40rpx;
+  /* margin-bottom: 80rpx; */
+  padding:0 20rpx 80rpx;
   overflow: hidden;
 }
 .commit-btn{
-  margin-top: 30rpx;
+  margin-top: 40rpx;
 }
