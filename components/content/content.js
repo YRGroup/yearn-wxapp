@@ -5,14 +5,31 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    phone: {
+      type: String,
+      default: ''
+    },
+    code: {
+      type: String,
+      default: ''
+    },
+    
+  },
+  lifetimes: {
+    // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
+    attached: function () {
+      let that = this
+      this.setData({
+        codeImg: app.globalData.img_base_url + that.data.code
+      })
+    },
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    codeImg: app.globalData.img_base_url + 'yearn_codeImg.jpg'
+    // codeImg: app.globalData.img_base_url + 'yearn_codeImg.jpg'
   },
 
   /**
@@ -21,7 +38,7 @@ Component({
   methods: {
     callphone: function () {
       wx.makePhoneCall({
-        phoneNumber: '0371-86666161'
+        phoneNumber: this.data.phone
       })
     },
     openmap: function () {

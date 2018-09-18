@@ -48,8 +48,8 @@ Component({
         parseHtml(arr, 'listParse', this);
       })
     },
-    moved: function () {},
-    detached: function () {},
+    moved: function () { },
+    detached: function () { },
   },
   attached: function () {
 
