@@ -2,7 +2,7 @@
 <view class="wrapper">
   <image class="bannerImg" src="{{img_base_url}}newBg.jpg" mode="aspectFill"></image>
   <!-- <view class="bg" ></view> -->
-  <view>
+  <!-- <view>
     <view class="title">
       <text>ADMISSION PROBLEMS</text>
       <text>招生解答</text>
@@ -15,14 +15,14 @@
       <text class="pro-title" style="color: #ed8f25;">特色及其他</text>
       <v-slide title-class="title2" catId="{{9}}" count="{{3}}"></v-slide>
     </view>
-  </view>
-  <view class="form-box">
+  </view> -->
+  <view class="form-box"  style='background:#ddd'>
     <view class="title">
       <text>APPLY lONLINE</text>
       <text>招生报名</text>
     </view>
     <van-cell-group>
-      <van-field bind:change="onChange" border="{{ true }}" data-name="name" value="{{ name }}" required label="您的称呼:" placeholder="" />
+      <van-field bind:change="onChange" border="{{ true }}" data-name="name" value="{{ name }}" required label="姓名:" placeholder="" />
       <van-field bind:change="onChange" value="{{ phone }}" data-name="phone" label="手机号:" placeholder="" required />
       <van-field bind:change="onChange"  value="{{ student_age }}" data-name="student_age" required label="儿童年龄:" placeholder="" error-message="" />
     </van-cell-group>
@@ -30,4 +30,5 @@
   </view>
   <van-notify id="custom-selector" />
   <van-dialog id="van-dialog" />
+  <v-content></v-content>
 </view>
