@@ -19,13 +19,19 @@
         "pagePath": "pages/index/index",
         "selectedIconPath": "/images/icon/index.png",
         "iconPath": "/images/icon/indexS.png",
-        "text": "首页"
+        "text": "园区首页"
+      },
+      {
+        "pagePath": "pages/kindergarten/index",
+        "selectedIconPath": "/images/icon/index.png",
+        "iconPath": "/images/icon/indexS.png",
+        "text": "幼儿园部"
       },
       {
         "pagePath": "pages/primary/index",
         "selectedIconPath": "/images/icon/nprimary.png",
         "iconPath": "/images/icon/nprimaryS.png",
-        "text": "小学"
+        "text": "小学部"
       },
       {
         "pagePath": "pages/natatorium/index",

@@ -1,11 +1,21 @@
 // pages/kindergarten/index.js
+const app = getApp();
+const img_base_url = app.globalData.img_base_url;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    bannerList:[
+      {
+        url:img_base_url+'prim_banner1.jpg'
+      },{
+        url:img_base_url+'prim_banner2.jpg'
+      },{
+        url:img_base_url+'prim_banner3.jpg'
+      }
+    ]
   },
 
   /**

@@ -1,11 +1,14 @@
+.wrapper{
+  position: relative;
+}
 .swiper {
   /* height: 500rpx; */
+ 
 }
 
 .swiper-item {
   box-sizing: border-box;
   width: 100%;
-  padding: 20rpx 10rpx;
   position: relative;
 }
 
@@ -22,4 +25,23 @@
   line-height: 40rpx;
   font-size: 30rpx;
   z-index: 2;
+}
+
+.dots{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 30rpx;
+}
+.dot{
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  margin: 0 20rpx;
+  transition: all .3s;
+}
+.dot.active{
+  width: 60rpx;
 }

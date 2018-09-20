@@ -21,7 +21,7 @@ Page({
       wx.navigateBack()
       return;
     }
-    let src = `${config.api_blink_url}/allnews/news/${options.id}.html?weapp=1`
+    let src = `${config.api_blink_url}allnews/news/${options.id}.html?weapp=1`
     this.setData({
       src: src
     })

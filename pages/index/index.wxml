@@ -22,7 +22,7 @@
     <text>YEARN DYNAMICS</text>
     <text>少儿活动</text>
   </view>
-  <v-imgslide foid="{{1002}}"></v-imgslide>
+  <v-imgslide showDots="{{true}}" foid="{{1002}}"></v-imgslide>
 </view>
 <v-content phone="{{'0371-86666161'}}" code="yearn_codeImg.jpg"></v-content>
 <view class="fix-btn"  bindtap="toAdmission">

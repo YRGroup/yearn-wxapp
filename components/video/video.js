@@ -16,7 +16,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    videoSrc: "http://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/yearn/becomingwhoyouare.mp4",
+    videoSrc: "https://yr-zhxy.oss-cn-beijing.aliyuncs.com/YRVideo/yearn/becomingwhoyouare.mp4",
     cover:app.globalData.img_base_url+'cover.png'
   },
   lifetimes: {

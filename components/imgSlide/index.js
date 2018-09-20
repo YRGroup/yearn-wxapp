@@ -12,30 +12,54 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    imgList: {
+      type: Array,
+      value: []
+    },
     foid: {
       type: Number,
       value: 0
     },
-    mode:{
-      type:String,
-      value:'aspectFill'
+    mode: {
+      type: String,
+      value: 'aspectFill'
     },
     height: {
       type: Number,
       value: 300
+    },
+    margin: {
+      type: Number,
+      value: 150
+    },
+    slideSpace: {
+      type: Number,
+      value: 10
+    },
+    showDots:{
+      type:Boolean,
+      value:false
     }
+
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    imgUrls: []
+    //遍历的对象
+    imgUrls: [],
+    currentIndex:0,
+
   },
   lifetimes: {
     // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
     attached: function () {
-      this.getXc(this.data.foid)
+      if (this.data.imgList.length && !this.data.foid) {
+        this.setImgList(this.data.imgList);
+      } else {
+        this.getXc(this.data.foid);
+      }
     },
     moved: function () {},
     detached: function () {},
@@ -47,21 +71,30 @@ Component({
     getXc(id) {
       api.getXcById(id, (res) => {
         console.log(res)
-        this.setData({
-          imgUrls: res.post.attachments
-        })
+        this.setImgList(res.post.attachments);
       })
     },
-    previewImage: function(e) {
+    previewImage: function (e) {
       let src = e.target.dataset.src
       let arr = []
-      this.data.imgUrls.forEach(el=>{
+      this.data.imgUrls.forEach(el => {
         arr.push(el.url)
       })
       wx.previewImage({
         current: src,
         urls: arr
       })
+    },
+    setImgList(list){
+      this.setData({
+        imgUrls: list
+      })
+    },
+    handleChange(ev){
+      this.setData({
+        currentIndex:ev.detail.current
+      })
+      this.triggerEvent('handleChange', ev)
     }
   }
 })
