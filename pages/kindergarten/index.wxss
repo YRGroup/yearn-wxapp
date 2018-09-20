@@ -1,1 +1,45 @@
 /* pages/kindergarten/index.wxss */
+.kinder-logo{
+  width: 240px;
+  height: 40px;
+  margin: 30rpx 0;
+}
+.kinder-content{
+  background-size: 100% 100%;
+  margin-top: -20px;
+}
+
+.kinder-info{
+  padding: 70px 0;
+}
+.kinder-info .content-wrapper{
+  padding: 20rpx;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.kinder-content .content text{
+  text-indent: 20rpx;
+  text-align: left;
+  color: #fff;
+}
+
+.kinder-edu{
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.kinder-edu .title{
+  color: #fff;
+}
+.kinder-edu .content-wrapper{
+  padding: 20rpx 20rpx 50rpx;
+  background: #ffffff;
+  border-radius: 30rpx;
+}
+.kinder-edu .content-wrapper text{
+  color: #333;
+} 
+
+/* 师资风采 */
+.kinder-teacher .title{
+  color: #fff;
+}

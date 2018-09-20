@@ -4,7 +4,7 @@
     indicator-active-color="#114875"
     autoplay="{{false}}" 
     interval="{{5000}}" 
-    current="1"
+    current="{{current}}"
     previous-margin="{{margin}}rpx"
     next-margin="{{margin}}rpx"
     style="height:{{height+'rpx'}}"
@@ -14,7 +14,7 @@
       <swiper-item 
       class="swiper-item" 
       style="padding-left:{{slideSpace}}rpx;padding-right:{{slideSpace}}rpx;">
-        <image mode="{{mode}}" bindtap="previewImage" data-src="{{item.url}}" src="{{item.images.medium.url}}" class="slide-image" />
+        <image mode="{{mode}}" bindtap="previewImage" data-src="{{item.url}}" src="{{item.images.medium.url||item.url}}" class="slide-image" />
         <!-- <text class="img-title">{{item.title}}</text> -->
       </swiper-item>
     </block>

@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    img_base_url:img_base_url,
     bannerList:[
       {
         url:img_base_url+'prim_banner1.jpg'
@@ -15,9 +16,22 @@ Page({
       },{
         url:img_base_url+'prim_banner3.jpg'
       }
-    ]
+    ],
+    curseCurrentTop:1,
+    curseCurrentBottom:1
   },
-
+  handleChangeTop(ev){
+    if(ev.detail.detail.source!="touch") return;
+    this.setData({
+      curseCurrentBottom:ev.detail.detail.current
+    })
+  },
+  handleChangeBottom(ev){
+    if(ev.detail.detail.source!="touch") return;
+    this.setData({
+      curseCurrentTop:ev.detail.detail.current
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
