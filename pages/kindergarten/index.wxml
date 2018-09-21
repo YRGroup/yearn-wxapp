@@ -1,4 +1,5 @@
 <!-- pages/kindergarten/index.wxml -->
+<import src="../../components/wxParse/wxParse.wxml"/>
 <view>
   <view class="banner-slide">
     <v-imgslide showDots="{{true}}" height="400" slideSpace="{{0}}" margin="{{0}}" imgList="{{bannerList}}"></v-imgslide>
@@ -41,16 +42,34 @@
       <text>HIGH SPOCE CHARACTERISTIC COURSE</text>
       <text>高宽实践特色课</text>
     </view>
-    <v-imgslide 
-    foid="{{210}}" 
-    preview="{{false}}"
-    current="{{curseCurrentTop}}" 
-    margin="{{0}}"
-    slideSpace="{{20}}"
-    height="400"
-    bind:handleChange="handleChangeTop"></v-imgslide>
-
-    <v-imgslide preview="{{false}}" height="{{100}}" margin="{{250}}" foid="{{210}}" current="{{curseCurrentBottom}}"  bind:handleChange="handleChangeBottom"></v-imgslide>
+    <!-- components/introduce/introduce.wxml -->
+<view class="wrapper">
+  <swiper class="swiper"
+    indicator-active-color="#114875"
+    autoplay="{{false}}" 
+    interval="{{5000}}" 
+    style="height:600rpx"
+    bindchange="handleChange"
+    >
+    <block wx:for="{{curses}}" wx:for-index="index" wx:key="{{index}}">
+      <swiper-item 
+      class="swiper-item" 
+      >
+        <image style="height:400rpx;width:100%;" mode="aspectFit" src="{{item.thumbnail}}" class="slide-image" />
+        <view>
+          <text>{{item.title}}</text>
+          <text> 
+            <template is="wxParse" data="{{wxParseData:listParse[index]}}"/></text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="dots" wx:if="{{showDots}}"> 
+    <text wx:for="{{imgUrls}}"  
+    wx:for-index="index" wx:key="{{index}}"
+    class="dot {{index==currentIndex?'active':''}}" data-index="{{index}}"></text>
+  </view>
+</view>
   </view>
   <view class="kinder-content kinder-teacher"  style="background-image: url('{{img_base_url}}kinder_bg6.png');">
     <view class="title">

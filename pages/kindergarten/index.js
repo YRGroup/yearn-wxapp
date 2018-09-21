@@ -3,6 +3,9 @@ import {
   formatNewsTitle
 } from "../../utils/index"
 import {
+  parseHtml
+} from "../../utils/index"
+import {
   Api
 } from "../../server/api";
 let api = new Api();
@@ -24,7 +27,8 @@ Page({
       url: img_base_url + 'prim_banner3.jpg'
     }],
     curseCurrentTop: 1,
-    curseCurrentBottom: 1
+    curseCurrentBottom: 1,
+    curses: []
   },
   handleChangeTop(ev) {
     if (ev.detail.detail.source != "touch") return;
@@ -48,11 +52,20 @@ Page({
       //   el.excerpt = this.formatNewsTitle(el.excerpt)
       //   return el;
       // })
+
       console.log(res)
-      // this.setData({
-      //   newsList: this.data.newsList.concat(data)
-      // })
+      this.setData({
+        curses: res.posts
+      })
+      let arr = []
+      res.posts.forEach(el => {
+        arr.push(el.content)
+      })
+      parseHtml(arr, 'listParse', this);
     });
+  },
+  handleChange(ev) {
+
   },
   /**
    * 生命周期函数--监听页面加载
