@@ -1,10 +1,62 @@
-<!--pages/kindergarten/index.wxml-->
+<!-- pages/kindergarten/index.wxml -->
 <view>
-  <v-imgslide 
-    showDots="{{true}}" 
- 
-    slideSpace="{{0}}"
+  <view class="banner-slide">
+    <v-imgslide showDots="{{true}}" height="400" slideSpace="{{0}}" margin="{{0}}" imgList="{{bannerList}}"></v-imgslide>
+  </view>
+  <view class="kinder-content kinder-info" style="background-image: url('{{img_base_url}}kinder_bg1.png');">
+    <view class="content-wrapper  flex-column ">
+      <image class="kinder-logo" mode="aspectFit" src="{{img_base_url}}logo/kindergartenLogo.png"></image>
+      <view class="content">
+        <text>
+          易尔幼儿园从2013年开始建设筹备，2014年正式投入运营。旨在帮助2-6岁的幼儿学会主动学习，倡导积快乐的“计划-工作-整理-回顾”的思维方式，在“和孩子一起快乐成长”的过程中形成每一个孩子、个人专属的“行程性成长档案
+        </text>
+      </view>
+      <view class="content">
+        <text>
+          易尔幼儿园是目前国内建筑面积最大的3-6岁一体化、综合型幼儿园，其使用面积12000平方米，共能容纳幼儿400多名。幼儿玩拥有活动室、午睡室、盥洗室、舞蹈室，美术创意室、演播大厅、户外大型玩具等先进、环保、超标准化的配套设备设施和7000多平区角教学场地。运用美国的HIGH SCOPE教育理念，实行小班制教学，以激发幼儿的学习兴趣为出发点、以满足幼儿的身心发展需要为主要原则，多学科、整合式的课程设计，为儿童全面发展领航助力。
+        </text>
+      </view>
+    </view>
+  </view>
+  <view class="kinder-content kinder-edu" style="background-image: url('{{img_base_url}}kinder_bg4.png');">
+    <view class="title">
+      <text>YEARN DYNAMICS</text>
+      <text>少儿活动</text>
+    </view>
+    <view class="content-wrapper">
+      <view class="content">
+        <text>
+          易尔幼儿园从2013年开始建设筹备，2014年正式投入运营。旨在帮助2-6岁的幼儿学会主动学习，倡导积快乐的“计划-工作-整理-回顾”的思维方式，在“和孩子一起快乐成长”的过程中形成每一个孩子、个人专属的“行程性成长档案
+        </text>
+      </view>
+      <view class="content">
+        <text>
+          易尔幼儿园是目前国内建筑面积最大的3-6岁一体化、综合型幼儿园，其使用面积12000平方米，共能容纳幼儿400多名。幼儿玩拥有活动室、午睡室、盥洗室、舞蹈室，美术创意室、演播大厅、户外大型玩具等先进、环保、超标准化的配套设备设施和7000多平区角教学场地。运用美国的HIGH SCOPE教育理念，实行小班制教学，以激发幼儿的学习兴趣为出发点、以满足幼儿的身心发展需要为主要原则，多学科、整合式的课程设计，为儿童全面发展领航助力。
+        </text>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view class="title">
+      <text>HIGH SPOCE CHARACTERISTIC COURSE</text>
+      <text>高宽实践特色课</text>
+    </view>
+    <v-imgslide 
+    foid="{{210}}" 
+    preview="{{false}}"
+    current="{{curseCurrentTop}}" 
     margin="{{0}}"
-    imgList="{{bannerList}}"
-    ></v-imgslide>
+    slideSpace="{{20}}"
+    height="400"
+    bind:handleChange="handleChangeTop"></v-imgslide>
+
+    <v-imgslide preview="{{false}}" height="{{100}}" margin="{{250}}" foid="{{210}}" current="{{curseCurrentBottom}}"  bind:handleChange="handleChangeBottom"></v-imgslide>
+  </view>
+  <view class="kinder-content kinder-teacher"  style="background-image: url('{{img_base_url}}kinder_bg6.png');">
+    <view class="title">
+        <text>teachers spirit</text>
+        <text>教师风采</text>
+    </view>
+    <v-imgslide foid="{{210}}" height="{{600}}"></v-imgslide>
+  </view>
 </view>
