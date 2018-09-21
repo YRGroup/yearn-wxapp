@@ -52,17 +52,19 @@ Page({
       //   el.excerpt = this.formatNewsTitle(el.excerpt)
       //   return el;
       // })
-
       console.log(res)
       this.setData({
         curses: res.posts
       })
-      let arr = []
-      res.posts.forEach(el => {
-        arr.push(el.content)
-      })
-      parseHtml(arr, 'listParse', this);
     });
+  },
+  toCurse(ev){
+    console.log(ev)
+    let url = ev.currentTarget.dataset.url
+    wx.navigateTo({
+      url: `../webview/index?url=${url}`
+    })
+    
   },
   handleChange(ev) {
 

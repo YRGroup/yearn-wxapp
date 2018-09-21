@@ -44,22 +44,21 @@
     </view>
     <!-- components/introduce/introduce.wxml -->
 <view class="wrapper">
-  <swiper class="swiper"
+  <swiper class="curse-swiper"
     indicator-active-color="#114875"
     autoplay="{{false}}" 
     interval="{{5000}}" 
-    style="height:600rpx"
     bindchange="handleChange"
     >
     <block wx:for="{{curses}}" wx:for-index="index" wx:key="{{index}}">
       <swiper-item 
-      class="swiper-item" 
+      class="swiper-item"
+      data-url="{{item.url}}" 
+      bindtap="toCurse"
       >
         <image style="height:400rpx;width:100%;" mode="aspectFit" src="{{item.attachments[0].url}}" class="slide-image" />
-        <view>
+        <view class="curse-title">
           <text>{{item.title}}</text>
-          <text> 
-            <template is="wxParse" data="{{wxParseData:listParse[index]}}"/></text>
         </view>
       </swiper-item>
     </block>

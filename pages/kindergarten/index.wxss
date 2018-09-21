@@ -38,7 +38,21 @@
 .kinder-edu .content-wrapper text{
   color: #333;
 } 
-
+/* 课程 */
+.curse-swiper{
+  height: 400rpx;
+}
+.swiper-item{
+  position: relative;
+}
+.swiper-item .curse-title{
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding-left: 30rpx;
+  bottom: 0;
+}
 /* 师资风采 */
 .kinder-teacher .title{
   color: #fff;
