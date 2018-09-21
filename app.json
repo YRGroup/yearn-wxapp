@@ -23,15 +23,15 @@
       },
       {
         "pagePath": "pages/kindergarten/index",
-        "selectedIconPath": "/images/icon/index.png",
-        "iconPath": "/images/icon/indexS.png",
-        "text": "幼儿园部"
+        "selectedIconPath": "/images/icon/kindergarten.png",
+        "iconPath": "/images/icon/kindergartenS.png",
+        "text": "幼儿园"
       },
       {
         "pagePath": "pages/primary/index",
         "selectedIconPath": "/images/icon/nprimary.png",
         "iconPath": "/images/icon/nprimaryS.png",
-        "text": "小学部"
+        "text": "小学"
       },
       {
         "pagePath": "pages/natatorium/index",
