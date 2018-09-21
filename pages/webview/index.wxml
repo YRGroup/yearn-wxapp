@@ -1,5 +1,4 @@
 <view>
-
-  <web-view src="{{src}}">
+  <web-view src="{{url}}">
   </web-view>
 </view>

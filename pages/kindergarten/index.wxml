@@ -55,7 +55,7 @@
       <swiper-item 
       class="swiper-item" 
       >
-        <image style="height:400rpx;width:100%;" mode="aspectFit" src="{{item.thumbnail}}" class="slide-image" />
+        <image style="height:400rpx;width:100%;" mode="aspectFit" src="{{item.attachments[0].url}}" class="slide-image" />
         <view>
           <text>{{item.title}}</text>
           <text> 

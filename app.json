@@ -6,7 +6,7 @@
     "pages/natatorium/index",
     "pages/primary/index",
     "pages/newsList/index",
-    "pages/news/index"
+    "pages/webview/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -9,21 +9,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentPage: 0,
-    src: ''
+    url: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if (!options.id) {
+    if (!options.url) {
       wx.navigateBack()
       return;
     }
-    let src = `${config.api_blink_url}allnews/news/${options.id}.html?weapp=1`
+    let url = `${options.url}?weapp=1`
     this.setData({
-      src: src
+      url: url
     })
   },
 

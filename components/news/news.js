@@ -5,6 +5,9 @@ import {
 import {
   Api
 } from "../../server/api";
+import {
+  config
+} from "../../config";
 let api = new Api();
 
 Component({
@@ -92,8 +95,9 @@ Component({
     },
     handlenews(ev) {
       let id = ev.currentTarget.dataset.id;
+      // `${config.api_blink_url}allnews/news/${options.id}.html?weapp=1`
       wx.navigateTo({
-        url: `../news/index?id=${id}`
+        url: `../webview/index?url=${config.api_blink_url}allnews/news/${id}.html`
       })
     },
     //下拉加载
