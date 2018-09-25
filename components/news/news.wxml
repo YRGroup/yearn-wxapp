@@ -9,7 +9,12 @@
       <van-loading color="#ddd" />
     </view>
     <view bindtap="handlenews" data-id="{{item.id}}" class="news-card" wx:for="{{newsList}}" wx:key="index" wx:for-item="item" wx:for-index="index">
-      <van-card thumb-class="thumb-img" title-class="news-title" title="{{item.title}}" desc="{{item.date}}" thumb="{{ item.thumbnail}}"></van-card>
+      <view>
+
+        
+      </view>
+      <van-card custom-class="card" thumb-class="thumb-img" title-class="news-title" title="{{item.title}}" desc="{{item.date}}" thumb="{{ item.thumbnail}}"></van-card>
+      
     </view>
     <view wx:if="{{listPage&&loadingMore}}" class="loading-wrapper">
       <van-loading color="#ddd" />

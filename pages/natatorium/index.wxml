@@ -25,5 +25,5 @@
         </view>
         <v-slide catId="{{20}}"></v-slide>
     </view>
-    <v-content phone="{{'0371-86162631'}}" code="yearn_codeImg.jpg"></v-content>
+    <!-- <v-content phone="{{'0371-86162631'}}" code="yearn_codeImg.jpg"></v-content> -->
 </view>

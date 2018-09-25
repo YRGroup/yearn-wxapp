@@ -20,6 +20,9 @@
   text-align: center;
   color: #999;
 }
+/* .card{
+  padding-left: 180rpx;
+}
 .thumb-img{
   width: 400rpx;
-}
+} */

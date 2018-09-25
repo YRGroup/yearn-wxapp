@@ -11,6 +11,7 @@ import {
 let api = new Api();
 
 const app = getApp();
+
 const img_base_url = app.globalData.img_base_url;
 Page({
 

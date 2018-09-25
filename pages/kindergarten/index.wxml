@@ -2,7 +2,7 @@
 <import src="../../components/wxParse/wxParse.wxml" />
 <view>
   <view class="banner-slide">
-    <v-imgslide showDots="{{true}}" height="400" slideSpace="{{0}}" margin="{{0}}" imgList="{{bannerList}}"></v-imgslide>
+    <v-imgslide current="{{0}}" showDots="{{true}}" height="400" slideSpace="{{0}}" margin="{{0}}" imgList="{{bannerList}}"></v-imgslide>
   </view>
   <view class="kinder-content kinder-info" style="background-color: #2a90fa;">
     <view class="content-wrapper  flex-column ">
@@ -74,4 +74,4 @@
     <v-imgslide foid="{{1002}}"></v-imgslide>
   </view>
 </view>
-<v-content phone="{{'0371-86666161'}}" code="yearn_codeImg.jpg"></v-content>
+<!-- <v-content phone="{{'0371-86666161'}}" code="yearn_codeImg.jpg"></v-content> -->
