@@ -23,6 +23,7 @@
 .btn-wrapper{
   width: 90%;
   margin: 20rpx auto;
+  font-size: 40rpx;
 }
 .btn-wrapper button{
   color: #114875 !important;
@@ -32,6 +33,7 @@
   margin-bottom: 40rpx;
 }
 .fix-btn{
+
   width: 100rpx;
   height: 100rpx;
   position: fixed;

@@ -56,3 +56,10 @@ page {
   display: flex;
   justify-content: space-around;
 }
+
+.icon{
+  height: 40rpx;
+  width: 40rpx;
+  padding: 0 20rpx;
+  vertical-align: middle;
+}

@@ -16,7 +16,7 @@
             </view> -->
             <view bindtap="callphone">
                 <image class="icon" src="../../images/index/phone.png"></image>
-                <text >拨打电话</text>
+                <text >招生咨询</text>
             </view>
             <view>
                 <button open-type="share" >

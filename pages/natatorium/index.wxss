@@ -8,3 +8,10 @@
 }
 .title{
 }
+.phone{
+  text-align: center;
+  background: #494949;
+  color: #fff;
+  font-size: 40rpx;
+  line-height: 80rpx;
+}

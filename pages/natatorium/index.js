@@ -6,9 +6,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    img_base_url:app.globalData.img_base_url
+    img_base_url:app.globalData.img_base_url,
+    phone:'0371-86162631'
   },
-
+  callphone: function () {
+    wx.makePhoneCall({
+      phoneNumber: this.data.phone
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

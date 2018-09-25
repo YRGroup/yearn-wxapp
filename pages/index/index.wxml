@@ -10,7 +10,7 @@
   <v-news count="{{4}}" listPage="{{false}}"></v-news>
   <view class="btn-wrapper">
     <van-button bind:click="toNewsPage" custom-class="btn" type="primary" plain size="large">
-      more >
+      MORE >
     </van-button>
   </view>
 </view>

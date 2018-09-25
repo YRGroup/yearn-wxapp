@@ -1,7 +1,7 @@
 /* components/content/content.wxss */
 .content{
     background: #494949;
-    height: 800rpx;
+    /* height: 800rpx; */
     color: #fff;
     /* padding: 20rpx; */
 }
