@@ -2,30 +2,26 @@
 <v-introduce></v-introduce>
 <v-design></v-design>
 <v-video></v-video>
-
 <view class="news">
-  <v-news count="{{4}}" listPage="{{false}}">
-    <view class="title" slot="before">
-      <text>YEARN DYNAMICS</text>
-      <text>易尔动态</text>
-    </view>
-    <view class="btn-wrapper" slot="after">
-      <van-button bind:click="toNewsPage" custom-class="btn" type="primary" plain size="large">
-        more >
-      </van-button>
-    </view>
-  </v-news>
+  <view class="title">
+    <text>YEARN DYNAMICS</text>
+    <text>易尔动态</text>
+  </view>
+  <v-news count="{{4}}" listPage="{{false}}"></v-news>
+  <view class="btn-wrapper">
+    <van-button bind:click="toNewsPage" custom-class="btn" type="primary" plain size="large">
+      more >
+    </van-button>
+  </view>
 </view>
-
 <view style="margin-bottom:30rpx;background:#ddd">
-  <view class="title" >
+  <view class="title">
     <text>YEARN DYNAMICS</text>
     <text>少儿活动</text>
   </view>
   <v-imgslide foid="{{1002}}"></v-imgslide>
 </view>
 <v-content phone="{{'0371-86666161'}}" code="yearn_codeImg.jpg"></v-content>
-<view class="fix-btn"  bindtap="toAdmission">
+<view class="fix-btn" bindtap="toAdmission">
   <image src='/images/index/zsBtn.png'></image>
 </view>
-

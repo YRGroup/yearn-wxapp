@@ -1,6 +1,5 @@
 <!-- components/introduce/introduce.wxml -->
 <view class="wrapper">
-  <slot name="before"></slot>
   <scroll-view 
   class="scrollView" 
   scroll-y
@@ -19,5 +18,4 @@
       <text>没有更多了</text>
     </view>
   </scroll-view>
-  <slot name="after"></slot>
 </view>
