@@ -83,7 +83,7 @@ Component({
   methods: {
     getXc(id) {
       api.getXcById(id, (res) => {
-        console.log(res)
+        // console.log(res)
         this.setImgList(res.post.attachments);
       })
     },

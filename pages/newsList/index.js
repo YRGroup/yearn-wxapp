@@ -69,7 +69,6 @@ Page({
 
   },
   handleScroll: function (ev) {
-    console.log(111)
     let top = DEFAULT_TOP - ev.detail.detail.scrollTop;
     if (top < 0) {
       top = 0;
