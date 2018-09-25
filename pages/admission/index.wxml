@@ -35,5 +35,5 @@
   </view>
   <van-notify id="custom-selector" />
   <van-dialog id="van-dialog" />
-  <v-content phone="{{'0371-86666161'}}" code="yearn_codeImg.jpg"></v-content>
+  <!-- <v-content phone="{{'0371-86666161'}}" code="yearn_codeImg.jpg"></v-content> -->
 </view>

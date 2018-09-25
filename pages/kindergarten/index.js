@@ -52,14 +52,14 @@ Page({
       //   el.excerpt = this.formatNewsTitle(el.excerpt)
       //   return el;
       // })
-      console.log(res)
+      // console.log(res)
       this.setData({
         curses: res.posts
       })
     });
   },
   toCurse(ev){
-    console.log(ev)
+    // console.log(ev)
     let url = ev.currentTarget.dataset.url
     wx.navigateTo({
       url: `../webview/index?url=${url}`

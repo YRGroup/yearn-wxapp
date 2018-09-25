@@ -14,13 +14,13 @@
     </van-button>
   </view>
 </view>
-<view style="margin-bottom:30rpx;background:#ddd">
+<!-- <view style="margin-bottom:30rpx;background:#ddd">
   <view class="title">
     <text>YEARN DYNAMICS</text>
     <text>少儿活动</text>
   </view>
   <v-imgslide foid="{{1002}}"></v-imgslide>
-</view>
+</view> -->
 <v-content phone="{{'0371-86666161'}}" code="yearn_codeImg.jpg"></v-content>
 <view class="fix-btn" bindtap="toAdmission">
   <image src='/images/index/zsBtn.png'></image>

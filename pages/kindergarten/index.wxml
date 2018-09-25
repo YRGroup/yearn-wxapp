@@ -21,8 +21,8 @@
   </view>
   <view class="kinder-content kinder-edu" style="background-color: #da4359;">
     <view class="title">
-      <text>INTRODUCTION</text>
-      <text>幼儿园简介</text>
+      <text>HIGH SCOPE IDEA EDUCATION</text>
+      <text>高宽理念教育</text>
     </view>
     <view class="content-wrapper">
       <view class="content">
@@ -47,7 +47,7 @@
       <swiper class="curse-swiper" indicator-active-color="#114875" autoplay="{{false}}" interval="{{5000}}" bindchange="handleChange">
         <block wx:for="{{curses}}" wx:for-index="index" wx:key="{{index}}">
           <swiper-item class="swiper-item" data-url="{{item.url}}" bindtap="toCurse">
-            <image style="height:400rpx;width:100%;" mode="scaleToFill" src="{{item.attachments[0].url}}" class="slide-image" />
+            <image style="height:400rpx;width:100%;" mode="scaleToFill" src="{{item.thumbnail_images.full.url}}" class="slide-image" />
             <view class="curse-title">
               <text>{{item.title}}</text>
             </view>
@@ -64,7 +64,7 @@
       <text>TEACHERS</text>
       <text>教师风采</text>
     </view>
-    <v-imgslide foid="{{210}}" height="{{600}}"></v-imgslide>
+    <v-imgslide foid="{{210}}" height="{{500}}"></v-imgslide>
   </view>
   <view class="kinder-content kinder-active">
     <view class="title">

@@ -54,5 +54,5 @@ page {
   line-height: 60rpx;
   height: 60rpx;
   font-size: 28rpx;
-  padding-left:30rpx
+  padding: 20rpx;
 }
