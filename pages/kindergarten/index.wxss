@@ -48,9 +48,10 @@
 .swiper-item .curse-title{
   position: absolute;
   width: 100%;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   color: #fff;
   padding-left: 30rpx;
+  line-height: 70rpx;
   bottom: 0;
 }
 /* 师资风采 */
