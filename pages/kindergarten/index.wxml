@@ -1,10 +1,10 @@
 <!-- pages/kindergarten/index.wxml -->
-<import src="../../components/wxParse/wxParse.wxml"/>
+<import src="../../components/wxParse/wxParse.wxml" />
 <view>
   <view class="banner-slide">
     <v-imgslide showDots="{{true}}" height="400" slideSpace="{{0}}" margin="{{0}}" imgList="{{bannerList}}"></v-imgslide>
   </view>
-  <view class="kinder-content kinder-info" style="background-image: url('{{img_base_url}}kinder_bg1.png');">
+  <view class="kinder-content kinder-info" style="background-color: #2a90fa;">
     <view class="content-wrapper  flex-column ">
       <image class="kinder-logo" mode="aspectFit" src="{{img_base_url}}logo/kindergartenLogo.png"></image>
       <view class="content">
@@ -19,10 +19,10 @@
       </view>
     </view>
   </view>
-  <view class="kinder-content kinder-edu" style="background-image: url('{{img_base_url}}kinder_bg4.png');">
+  <view class="kinder-content kinder-edu" style="background-color: #da4359;">
     <view class="title">
-      <text>YEARN DYNAMICS</text>
-      <text>少儿活动</text>
+      <text>INTRODUCTION</text>
+      <text>幼儿园简介</text>
     </view>
     <view class="content-wrapper">
       <view class="content">
@@ -39,49 +39,39 @@
   </view>
   <view>
     <view class="title">
-      <text>HIGH SPOCE CHARACTERISTIC COURSE</text>
+      <text>HIGH SPOCE COURSE</text>
       <text>高宽实践特色课</text>
     </view>
     <!-- components/introduce/introduce.wxml -->
-<view class="wrapper">
-  <swiper class="curse-swiper"
-    indicator-active-color="#114875"
-    autoplay="{{false}}" 
-    interval="{{5000}}" 
-    bindchange="handleChange"
-    >
-    <block wx:for="{{curses}}" wx:for-index="index" wx:key="{{index}}">
-      <swiper-item 
-      class="swiper-item"
-      data-url="{{item.url}}" 
-      bindtap="toCurse"
-      >
-        <image style="height:400rpx;width:100%;" mode="scaleToFill" src="{{item.attachments[0].url}}" class="slide-image" />
-        <view class="curse-title">
-          <text>{{item.title}}</text>
-        </view>
-      </swiper-item>
-    </block>
-  </swiper>
-  <view class="dots" wx:if="{{showDots}}"> 
-    <text wx:for="{{imgUrls}}"  
-    wx:for-index="index" wx:key="{{index}}"
-    class="dot {{index==currentIndex?'active':''}}" data-index="{{index}}"></text>
+    <view class="wrapper">
+      <swiper class="curse-swiper" indicator-active-color="#114875" autoplay="{{false}}" interval="{{5000}}" bindchange="handleChange">
+        <block wx:for="{{curses}}" wx:for-index="index" wx:key="{{index}}">
+          <swiper-item class="swiper-item" data-url="{{item.url}}" bindtap="toCurse">
+            <image style="height:400rpx;width:100%;" mode="scaleToFill" src="{{item.attachments[0].url}}" class="slide-image" />
+            <view class="curse-title">
+              <text>{{item.title}}</text>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="dots" wx:if="{{showDots}}">
+        <text wx:for="{{imgUrls}}" wx:for-index="index" wx:key="{{index}}" class="dot {{index==currentIndex?'active':''}}" data-index="{{index}}"></text>
+      </view>
+    </view>
   </view>
-</view>
-  </view>
-  <view class="kinder-content kinder-teacher"  style="background-image: url('{{img_base_url}}kinder_bg6.png');">
+  <view class="kinder-content kinder-teacher" style="background-color : #e99747;">
     <view class="title">
-        <text>teachers spirit</text>
-        <text>教师风采</text>
+      <text>TEACHERS</text>
+      <text>教师风采</text>
     </view>
     <v-imgslide foid="{{210}}" height="{{600}}"></v-imgslide>
   </view>
   <view class="kinder-content kinder-active">
-    <view class="title" >
+    <view class="title">
       <text>YEARN DYNAMICS</text>
       <text>少儿活动</text>
     </view>
     <v-imgslide foid="{{1002}}"></v-imgslide>
   </view>
 </view>
+<v-content phone="{{'0371-86666161'}}" code="yearn_codeImg.jpg"></v-content>

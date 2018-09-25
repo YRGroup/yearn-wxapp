@@ -10,11 +10,11 @@
 }
 
 .kinder-info{
-  padding: 70px 0;
+  padding: 40px 0;
 }
 .kinder-info .content-wrapper{
-  padding: 20rpx;
-  background: rgba(0, 0, 0, 0.1);
+  padding:0 40rpx;
+  /* background: rgba(0, 0, 0, 0.1); */
   overflow: hidden;
 }
 .kinder-content .content text{
@@ -24,19 +24,19 @@
 }
 
 .kinder-edu{
-  padding: 20rpx;
+  padding: 40rpx;
   box-sizing: border-box;
-}
-.kinder-edu .title{
   color: #fff;
 }
+.kinder-edu .title{
+}
 .kinder-edu .content-wrapper{
-  padding: 20rpx 20rpx 50rpx;
-  background: #ffffff;
-  border-radius: 30rpx;
+  /* padding: 20rpx; */
+  /* background: #ffffff; */
+  /* border-radius: 30rpx; */
 }
 .kinder-edu .content-wrapper text{
-  color: #333;
+  /* color: #333; */
 } 
 /* 课程 */
 .curse-swiper{
@@ -54,6 +54,9 @@
   bottom: 0;
 }
 /* 师资风采 */
+.kinder-teacher {
+  padding: 40rpx 0; 
+}
 .kinder-teacher .title{
   color: #fff;
 }
