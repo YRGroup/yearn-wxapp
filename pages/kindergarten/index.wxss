@@ -6,7 +6,7 @@
 }
 .kinder-content{
   background-size: 100% 100%;
-  margin-top: -20px;
+  /* margin-top: -20px; */
 }
 
 .kinder-info{
@@ -24,7 +24,7 @@
 }
 
 .kinder-edu{
-  padding: 0 20rpx;
+  padding: 20rpx;
   box-sizing: border-box;
 }
 .kinder-edu .title{
@@ -56,4 +56,8 @@
 /* 师资风采 */
 .kinder-teacher .title{
   color: #fff;
+}
+
+.kinder-active{
+  margin-bottom: 40rpx;
 }

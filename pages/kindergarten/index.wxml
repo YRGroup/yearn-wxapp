@@ -56,7 +56,7 @@
       data-url="{{item.url}}" 
       bindtap="toCurse"
       >
-        <image style="height:400rpx;width:100%;" mode="aspectFit" src="{{item.attachments[0].url}}" class="slide-image" />
+        <image style="height:400rpx;width:100%;" mode="scaleToFill" src="{{item.attachments[0].url}}" class="slide-image" />
         <view class="curse-title">
           <text>{{item.title}}</text>
         </view>
@@ -76,5 +76,12 @@
         <text>教师风采</text>
     </view>
     <v-imgslide foid="{{210}}" height="{{600}}"></v-imgslide>
+  </view>
+  <view class="kinder-content kinder-active">
+    <view class="title" >
+      <text>YEARN DYNAMICS</text>
+      <text>少儿活动</text>
+    </view>
+    <v-imgslide foid="{{1002}}"></v-imgslide>
   </view>
 </view>
