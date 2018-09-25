@@ -18,7 +18,7 @@
   </view> -->
   <view class="form-box">
     <view class="title">
-      <text>APPLY lONLINE</text>
+      <text>APPLY ONLINE</text>
       <text>招生报名</text>
     </view>
     <van-cell-group custom-class="input-group">

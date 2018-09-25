@@ -32,24 +32,3 @@
 .news{
   margin-bottom: 40rpx;
 }
-.fix-btn{
-
-  width: 100rpx;
-  height: 100rpx;
-  position: fixed;
-  right: 40rpx;
-  bottom: 100rpx;
-  background: #fdfdfd;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 100rpx;
-  z-index: 99;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 20rpx #ddd;
-}
-.fix-btn image{
-  width: 60rpx;
-  height: 60rpx;
-}
