@@ -1,0 +1,4 @@
+<!--components/content/content.wxml-->
+<view class="footer">
+    <image src="{{src}}" class="logo" mode="aspectFit"></image>
+</view>

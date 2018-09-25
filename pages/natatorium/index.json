@@ -5,6 +5,7 @@
     "v-imgslide": "/components/imgSlide/index",
     "v-slide": "/components/slide/index",
     "v-facilities": "/components/facilities/facilities",
-    "v-content": "/components/content/content"
+    "v-content": "/components/content/content",
+    "v-footer": "/components/footer/index"
   }
 }

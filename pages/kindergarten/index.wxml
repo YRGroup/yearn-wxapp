@@ -75,3 +75,4 @@
   </view>
 </view>
 <!-- <v-content phone="{{'0371-86666161'}}" code="yearn_codeImg.jpg"></v-content> -->
+<v-footer src="{{img_base_url}}logo/kindergartenLogo.png"></v-footer>

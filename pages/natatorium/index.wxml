@@ -30,4 +30,5 @@
       <image class="icon" src="../../images/index/phone.png"></image>
       <text >客户服务</text>
     </view> -->
+    <v-footer src="{{img_base_url}}logo/swimLogo.png"></v-footer>
 </view>
