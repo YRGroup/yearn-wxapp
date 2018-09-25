@@ -32,6 +32,6 @@
     </view> -->
     <v-footer src="{{img_base_url}}logo/swimLogo.png"></v-footer>
     <view bindtap="callphone" class="fix-btn">
-      <image src='/images/index/phone.png'></image>
+      <image src='/images/index/phone1.png'></image>
     </view>
 </view>

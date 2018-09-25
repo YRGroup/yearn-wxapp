@@ -23,5 +23,5 @@
 </view> -->
 <v-content phone="{{'0371-86666161'}}" code="yearn_codeImg.jpg"></v-content>
 <view class="fix-btn" bindtap="toAdmission">
-  <image src='/images/index/zsBtn.png'></image>
+  <image src='/images/index/pen.png'></image>
 </view>

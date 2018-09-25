@@ -77,9 +77,9 @@ page {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 20rpx #ddd;
+  box-shadow: 0 5rpx 10rpx rgba(0,0,0,.2);
 }
 .fix-btn image{
-  width: 60rpx;
-  height: 60rpx;
+  width: 48rpx;
+  height: 48rpx;
 }
