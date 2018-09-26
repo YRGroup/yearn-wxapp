@@ -1,0 +1,29 @@
+.card-wrapper {
+  height: 240rpx;
+  padding: 20rpx;
+  display: flex;
+  justify-content: start;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+.card-thumbnail {
+  height: 100%;
+  width: 260rpx;
+  flex:0 0 260rpx;
+  padding-right: 20rpx;
+}
+.card-content{
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.card-content .card-title{
+  font-size: 35rpx;
+  color: #333;
+}
+.card-content .card-desc{
+  font-size: 28rpx;
+  color: #666;
+}

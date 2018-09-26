@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "v-news": "/components/news/news"
-  }
+  },
+  "navigationBarTitleText":"易尔动态"
 }

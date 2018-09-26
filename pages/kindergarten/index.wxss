@@ -7,11 +7,9 @@
 .kinder-content{
   background-size: 100% 100%;
   /* margin-top: -20px; */
+  padding: 30rpx 0;
 }
 
-.kinder-info{
-  padding: 40px 0;
-}
 .kinder-info .content-wrapper{
   padding:0 40rpx;
   /* background: rgba(0, 0, 0, 0.1); */

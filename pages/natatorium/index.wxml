@@ -1,9 +1,9 @@
 <!-- pages/natatorium/index.wxml -->
 <view class="wrapper">
     <image class="banner" src="{{img_base_url}}swim_banner.jpg" mode="aspectFill"></image>
-    <v-course foid="{{204}}"></v-course>
     <v-about></v-about>
-    <view class="stadiums" style="background-image: url('{{img_base_url}}swim_bg_2.png')">
+    <v-course foid="{{204}}"></v-course>
+    <view class="stadiums" style="background-image: url('{{img_base_url}}mainbg.jpg')">
         <view class="title" style="color:#fff">
             <text>STADIUMS AND STADIUMS</text>
             <text>场馆照片</text>

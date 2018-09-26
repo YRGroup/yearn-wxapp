@@ -30,5 +30,5 @@
   border-color: #114875;
 }
 .news{
-  margin-bottom: 40rpx;
+  padding: 40rpx 0;
 }

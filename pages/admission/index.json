@@ -8,5 +8,6 @@
     "van-notify": "/dist/notify/index",
     "van-dialog": "/dist/dialog/index",
     "v-content": "/components/content/content"
-  }
+  },
+  "navigationBarTitleText":"提交报名"
 }

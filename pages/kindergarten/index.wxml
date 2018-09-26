@@ -37,7 +37,7 @@
       </view>
     </view>
   </view>
-  <view>
+  <view class="kinder-content">
     <view class="title">
       <text>HIGH SPOCE COURSE</text>
       <text>高宽实践特色课</text>

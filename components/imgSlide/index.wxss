@@ -36,8 +36,8 @@
 .dot{
   display: inline-block;
   width: 20rpx;
-  height: 20rpx;
-  border-radius: 10rpx;
+  height: 10rpx;
+  border-radius: 5rpx;
   background: #fff;
   margin: 0 20rpx;
   transition: all .3s;

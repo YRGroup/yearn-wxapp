@@ -1,0 +1,8 @@
+<!--components/content/content.wxml-->
+<view class="card-wrapper">
+  <image class="card-thumbnail" src="{{thumbnail}}"></image> 
+  <view class="card-content">
+    <text class="card-title">{{title}}</text>
+    <text class="card-desc">{{desc}}</text>
+  </view>
+</view>
