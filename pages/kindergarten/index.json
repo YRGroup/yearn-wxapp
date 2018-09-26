@@ -7,5 +7,6 @@
     "v-facilities": "/components/facilities/facilities",
     "v-content": "/components/content/content",
     "v-footer": "/components/footer/index"
-  }
+  },
+  "navigationBarTitleText": "易尔幼儿园"
 }

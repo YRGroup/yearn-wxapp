@@ -20,7 +20,7 @@
 .kinder-content .content text{
   text-indent: 20rpx;
   text-align: left;
-  color: #fff;
+  color: rgba(255,255,255,.8);
 }
 
 .kinder-edu{
