@@ -4,9 +4,9 @@
   <view class="banner-slide">
     <v-imgslide current="{{0}}" showDots="{{true}}" height="400" slideSpace="{{0}}" margin="{{0}}" imgList="{{bannerList}}"></v-imgslide>
   </view>
-  <view class="kinder-content kinder-info" style="background-color: #2a90fa;">
+  <view class="kinder-content kinder-info" style="background-color: #13285d;">
     <view class="content-wrapper  flex-column ">
-      <image class="kinder-logo" mode="aspectFit" src="{{img_base_url}}logo/kindergartenLogo.png"></image>
+      <image class="kinder-logo" mode="aspectFit" src="/images/logo-kindergarten1.png"></image>
       <view class="content">
         <text>
           易尔幼儿园从2013年开始建设筹备，2014年正式投入运营。旨在帮助2-6岁的幼儿学会主动学习，倡导积快乐的“计划-工作-整理-回顾”的思维方式，在“和孩子一起快乐成长”的过程中形成每一个孩子、个人专属的“行程性成长档案
@@ -19,7 +19,7 @@
       </view>
     </view>
   </view>
-  <view class="kinder-content kinder-edu" style="background-color: #da4359;">
+  <view class="kinder-content kinder-edu" style="background-color: #b73245;">
     <view class="title">
       <text>HIGH SCOPE IDEA EDUCATION</text>
       <text>高宽理念教育</text>
@@ -59,7 +59,7 @@
       </view>
     </view>
   </view>
-  <view class="kinder-content kinder-teacher" style="background-color : #e99747;">
+  <view class="kinder-content kinder-teacher" style="background-color : #b96b1f;">
     <view class="title">
       <text>TEACHERS</text>
       <text>教师风采</text>
